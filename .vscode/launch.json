@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DoWhileInsideWhile",
+            "request": "launch",
+            "mainClass": "Tue08SEP.DoWhileInsideWhile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "WhileInsideDoWhile",
+            "request": "launch",
+            "mainClass": "Tue08SEP.WhileInsideDoWhile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "DoWhileInsideFor",
             "request": "launch",
             "mainClass": "Tue08SEP.DoWhileInsideFor",

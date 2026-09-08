@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DoWhileInsideFor",
+            "request": "launch",
+            "mainClass": "Tue08SEP.DoWhileInsideFor",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "ForInsideDoWhile",
+            "request": "launch",
+            "mainClass": "Tue08SEP.ForInsideDoWhile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "WhileInsideFor",
+            "request": "launch",
+            "mainClass": "Tue08SEP.WhileInsideFor",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Pattern7",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Pattern7",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Pattern6",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Pattern6",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Pattern4",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Pattern4",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Pattern3",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Pattern3",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Pattern2",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Pattern2",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Pattern1",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Pattern1",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "Tue08SEP.Fibonacci",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "ForInsideWhile",
+            "request": "launch",
+            "mainClass": "Tue08SEP.ForInsideWhile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "DoWhileInsideDowhile",
+            "request": "launch",
+            "mainClass": "Tue08SEP.DoWhileInsideDowhile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "WhileInsideWhile",
+            "request": "launch",
+            "mainClass": "Tue08SEP.WhileInsideWhile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "NestedLoop",
             "request": "launch",
             "mainClass": "Mon07SEP.NestedLoop",

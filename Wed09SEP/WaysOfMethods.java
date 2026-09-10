@@ -29,9 +29,19 @@ public class WaysOfMethods
         else
             return y;
     }
+
+
     public static void main(String[] args) 
     {
-        
+        greet();
+
+        printSum(10,20);
+
+        int num = getNumber();
+        System.out.println(num);
+
+        int largest = max(25, 30);
+        System.out.println(largest);
     }
     
 }

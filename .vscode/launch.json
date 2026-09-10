@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TodayClass",
+            "request": "launch",
+            "mainClass": "Thu10SEP.TodayClass",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "DoWhileInsideWhile",
             "request": "launch",
             "mainClass": "Tue08SEP.DoWhileInsideWhile",

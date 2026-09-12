@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MethodOverloading",
+            "request": "launch",
+            "mainClass": "Fri11SEP.MethodOverloading",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "StringPassing",
+            "request": "launch",
+            "mainClass": "Fri11SEP.StringPassing",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "ReturnArray",
+            "request": "launch",
+            "mainClass": "Fri11SEP.ReturnArray",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "PaasByObj",
+            "request": "launch",
+            "mainClass": "Fri11SEP.PaasByObj",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "TodayClass",
+            "request": "launch",
+            "mainClass": "Fri11SEP.TodayClass",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "TodayClass",
             "request": "launch",
             "mainClass": "Thu10SEP.TodayClass",

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WaysOfMethods",
+            "request": "launch",
+            "mainClass": "Wed09SEP.WaysOfMethods",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "MethodOverloading",
             "request": "launch",
             "mainClass": "Fri11SEP.MethodOverloading",

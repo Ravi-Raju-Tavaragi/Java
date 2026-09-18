@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PassByRefference",
+            "request": "launch",
+            "mainClass": "Fri18SEP.PassByRefference",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Functionclass",
             "request": "launch",
             "mainClass": "Fri18SEP.Functionclass",

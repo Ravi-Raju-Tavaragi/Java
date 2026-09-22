@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "Tue22SEP.Sum",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "PassByRefference",
             "request": "launch",
             "mainClass": "Fri18SEP.PassByRefference",

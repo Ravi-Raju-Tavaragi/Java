@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RepeatedNumber",
+            "request": "launch",
+            "mainClass": "Tue22SEP.RepeatedNumber",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "CountPosNegZero",
             "request": "launch",
             "mainClass": "Tue22SEP.CountPosNegZero",

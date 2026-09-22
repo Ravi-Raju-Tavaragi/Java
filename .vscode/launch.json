@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AvgofArrayElement",
+            "request": "launch",
+            "mainClass": "Tue22SEP.AvgofArrayElement",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "SearchElement",
             "request": "launch",
             "mainClass": "Tue22SEP.SearchElement",

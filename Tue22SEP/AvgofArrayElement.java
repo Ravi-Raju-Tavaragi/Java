@@ -9,7 +9,6 @@ public class AvgofArrayElement
 
         for(int var : arr)
         {
-            //sum += var;
             sum = sum + var;
         }
         
@@ -26,7 +25,7 @@ public class AvgofArrayElement
         AvgofArrayElement obj = new AvgofArrayElement();
 
         System.out.println(obj.findSum(arr));
-        
+
     }
     
 }

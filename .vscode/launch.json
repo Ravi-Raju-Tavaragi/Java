@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SecondLargest",
+            "request": "launch",
+            "mainClass": "Tue22SEP.SecondLargest",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "DivisibleBy3",
             "request": "launch",
             "mainClass": "Tue22SEP.DivisibleBy3",

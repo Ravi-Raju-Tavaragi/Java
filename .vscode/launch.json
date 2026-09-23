@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayInput",
+            "request": "launch",
+            "mainClass": "Wed23SEP.ArrayInput",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "SecondLargest",
             "request": "launch",
             "mainClass": "Tue22SEP.SecondLargest",

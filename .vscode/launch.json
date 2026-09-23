@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KeyCount",
+            "request": "launch",
+            "mainClass": "Wed23SEP.KeyCount",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ShowNames",
             "request": "launch",
             "mainClass": "Wed23SEP.ShowNames",

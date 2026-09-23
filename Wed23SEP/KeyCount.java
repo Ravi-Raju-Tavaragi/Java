@@ -19,6 +19,7 @@ public class KeyCount
 
     public static void main(String[] args)
     {
+        //print statement
         System.out.println("Key Count is : "+ countKey(20, 10, 20, 30, 20, 40, 20));
     }
     

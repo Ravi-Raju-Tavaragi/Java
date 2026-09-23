@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ShowNames",
+            "request": "launch",
+            "mainClass": "Wed23SEP.ShowNames",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "CountEven",
             "request": "launch",
             "mainClass": "Wed23SEP.CountEven",

@@ -19,7 +19,7 @@ public class CountEven
 
     public static void main(String[] args)
     {
-        System.out.println("Even Number Count is : "+evenCount(10,25,33,40,50));
+        System.out.println("Even Number Count is : "+evenCount(10, 25, 33, 40, 50));
     }
     
 }

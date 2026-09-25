@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayDSA",
+            "request": "launch",
+            "mainClass": "Fri25SEP.ArrayDSA",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "PrintDetails",
             "request": "launch",
             "mainClass": "Thu24SEP.PrintDetails",

@@ -42,12 +42,53 @@ public class ArrayLefttoRight
         {
             System.out.print(array[leftIdex] +" -> " + array[rightIndex] + " -> ");  
             leftIdex++;
-            rightIndex--; 
-                    
-        }
+            rightIndex--;              
+        }     
+    }
+
+
+    static void printFromCenterTowardsBothEnd(int[] array)
+    {
         
 
+        /*int result;
+        result = array[array.length] % 2;
+        
+        if(result == 0)
+        {
+        leftIndex = array[array.length] - (result-1);
+        rightIndex = array[array.length] - result;
+        }
+        else
+        {
+            leftIndex = array[array.length] - result;
+            rightIndex = array[array.length] - result;
+        }*/
+       System.out.println();
+
+        int leftIndex = 0;
+        int rightIndex = 0;
+       if(array.length % 2 == 0)
+       {
+        leftIndex = (array.length / 2) - 1;
+        rightIndex = array.length / 2;
+
+       }
+       else
+        {
+            leftIndex = array.length / 2;
+            rightIndex = array.length / 2;
+
+        }
+
+        while (leftIndex >= 0 && rightIndex <= array.length) 
+        {
+            System.out.print(array[leftIndex] +" -> " + array[rightIndex] + " -> ");  
+            leftIndex--;
+            rightIndex++; 
+        }
     }
+    
 
 
 
@@ -57,6 +98,7 @@ public class ArrayLefttoRight
         printLeftToRight(array);
         printRightToLeft(array);
         prinFromBothSidesTowardsEnd(array);
+        printFromCenterTowardsBothEnd(array);
         
     }
     

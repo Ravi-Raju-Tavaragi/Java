@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayStoreInObject",
+            "request": "launch",
+            "mainClass": "Fri25SEP.ArrayStoreInObject",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ArrayLefttoRight",
             "request": "launch",
             "mainClass": "Fri25SEP.ArrayLefttoRight",

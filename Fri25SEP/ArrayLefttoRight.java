@@ -36,7 +36,7 @@ public class ArrayLefttoRight
         System.out.println();
 
         int leftIdex = 0;
-        int rightIndex =array.length-1;
+        int rightIndex = array.length-1;
 
         while(leftIdex <= rightIndex)
         {

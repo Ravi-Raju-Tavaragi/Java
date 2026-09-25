@@ -11,6 +11,7 @@ public class ArrayDSA
             marks[3] = 100;
             System.out.print(marks[i]);
         }
+        
         /*System.out.print(marks[0]);
         System.out.print(marks[1]);
         System.out.print(marks[2]);

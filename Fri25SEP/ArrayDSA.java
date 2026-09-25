@@ -16,6 +16,14 @@ public class ArrayDSA
         System.out.print(marks[2]);
         System.out.print(marks[3]);*/
 
+
+        int[] marks1 = new int[5];
+        for(int i = 0; i < marks1.length; i++)
+        {
+            System.out.print(marks1[i]);
+        }
+
+
     }
     
 }

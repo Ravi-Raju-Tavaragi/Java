@@ -31,14 +31,14 @@ public class Armstrong
         Scanner sc = new Scanner(System.in); 
         System.out.print("Enter a number: "); 
         int n = sc.nextInt(); 
-        if (isArmstrong(n)) 
+        if(isArmstrong(n)) 
             { 
                 System.out.println("Armstrong Number"); 
-
-            } else
-                 { System.out.println("Not Armstrong Number"); 
-
-                 } 
-                 sc.close(); 
-                } 
             }
+            else
+            { 
+                System.out.println("Not Armstrong Number"); 
+            } 
+         sc.close(); 
+     } 
+}

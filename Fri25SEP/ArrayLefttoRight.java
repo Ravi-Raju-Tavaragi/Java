@@ -35,14 +35,13 @@ public class ArrayLefttoRight
     {
         System.out.println();
 
-        int leftIdex = array[0];
-        int rightIndex = array.length;
+        int leftIdex = 0;
+        int rightIndex =array.length-1;
 
         while(leftIdex <= rightIndex)
         {
-            System.out.print(leftIdex +" ");  
+            System.out.print(array[leftIdex] +" -> " + array[rightIndex] + " -> ");  
             leftIdex++;
-            System.out.print(rightIndex +" ");
             rightIndex--; 
                     
         }

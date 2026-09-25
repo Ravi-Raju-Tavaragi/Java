@@ -65,6 +65,8 @@ public class ArrayLefttoRight
         }*/
 
 
+
+
     static void printFromCenterTowardsBothEnd(int[] array)
     {
        System.out.println();
@@ -89,26 +91,22 @@ public class ArrayLefttoRight
             leftIndex = array.length / 2;
             rightIndex = array.length / 2;
 
-             while (leftIndex >= 0 && rightIndex <= array.length) 
+            while (leftIndex >= 0 && rightIndex <= array.length) 
         {
             if(leftIndex == rightIndex)
             {
-                 System.out.print(array[leftIndex] + " -> ");  
-
+                System.out.print(array[leftIndex] + " -> ");  
 
             }
             else
             {
-            System.out.print(array[leftIndex] +" -> " + array[rightIndex] + " -> ");  
-            
+            System.out.print(array[leftIndex] +" -> " + array[rightIndex] + " -> ");    
             } 
             leftIndex--;
             rightIndex++;
         }
 
         }
-
-       
     }
     
 
@@ -116,7 +114,7 @@ public class ArrayLefttoRight
 
     public static void main(String[] args)
     {
-        int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
         printLeftToRight(array);
         printRightToLeft(array);
         prinFromBothSidesTowardsEnd(array);

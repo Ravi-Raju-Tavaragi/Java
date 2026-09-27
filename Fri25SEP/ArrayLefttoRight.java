@@ -78,7 +78,7 @@ public class ArrayLefttoRight
         leftIndex = (array.length / 2) - 1;
         rightIndex = array.length / 2;
 
-         while (leftIndex >= 0 && rightIndex <= array.length) 
+        while (leftIndex >= 0 && rightIndex <= array.length) 
         {
             System.out.print(array[leftIndex] +" -> " + array[rightIndex] + " -> ");  
             leftIndex--;

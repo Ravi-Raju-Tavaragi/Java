@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseString",
+            "request": "launch",
+            "mainClass": "Visualization_Problems.ReverseString",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "StringLength",
             "request": "launch",
             "mainClass": "Visualization_Problems.StringLength",

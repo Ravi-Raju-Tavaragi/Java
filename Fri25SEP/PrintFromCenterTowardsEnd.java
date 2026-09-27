@@ -24,7 +24,7 @@ public class PrintFromCenterTowardsEnd
     {
         leftIndex = array[array.length] - result;
         rightIndex = array[array.length] - result;
-        while (leftIndex >= 0 && rightIndex <= array.length) 
+        while (leftIndex <= 0 && rightIndex <= array.length) 
         {
             if(leftIndex == rightIndex)
             {

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "Visualization_Problems.BinarySearch",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "PrintFromCenterTowardsEnd",
             "request": "launch",
             "mainClass": "Fri25SEP.PrintFromCenterTowardsEnd",

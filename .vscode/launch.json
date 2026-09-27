@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Visualization_Problems.BubbleSort",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "BinarySearch",
             "request": "launch",
             "mainClass": "Visualization_Problems.BinarySearch",

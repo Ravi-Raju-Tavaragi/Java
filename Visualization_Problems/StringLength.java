@@ -17,7 +17,7 @@ public class StringLength
 
 
 
-    static char[] concatStrings(char[] str1, char[] str2)
+    static char[] concatinationOfStrings(char[] str1, char[] str2)
     {
     char[] result = new char[str1.length + str2.length];
 
@@ -51,7 +51,7 @@ public class StringLength
         System.out.println("Length of s1: " + getLength(s1));
 
         System.out.print("Concatenation: ");
-        System.out.println(concatStrings(s1, s2));
+        System.out.println(concatinationOfStrings(s1, s2));
     }
     
 }

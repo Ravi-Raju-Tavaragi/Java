@@ -22,28 +22,24 @@ public class PrintFromCenterTowardsEnd
     }
     else
     {
-        leftIndex = array[array.length] - result;
-        rightIndex = array[array.length] - result;
-        while (leftIndex <= 0 && rightIndex <= array.length) 
+    leftIndex = array[array.length] - result;
+    rightIndex = array[array.length] - result;
+    while (leftIndex <= 0 && rightIndex <= array.length) 
+    {
+        if(leftIndex == rightIndex)
         {
-            if(leftIndex == rightIndex)
-            {
-                System.out.print(array[leftIndex] + " -> ");  
+            System.out.print(array[leftIndex] + " -> ");  
 
-            }
-            else
-            {
-            System.out.print(array[leftIndex] +" -> " + array[rightIndex] + " -> ");    
-            } 
-            leftIndex--;
-            rightIndex++;
+        }
+        else
+        {
+        System.out.print(array[leftIndex] +" -> " + array[rightIndex] + " -> ");    
+        } 
+        leftIndex--;
+        rightIndex++;
         }
     }
-    
-
 }
-
-
     public static void main(String[] args) 
     {
         int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};

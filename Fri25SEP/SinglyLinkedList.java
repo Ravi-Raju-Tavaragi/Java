@@ -39,10 +39,9 @@ public class SinglyLinkedList
         newNode.next = firsNode;
         firsNode.next = newNode;
 
-        System.out.println(newNode.data);
-        System.out.println(newNode.next.data);
-        System.out.println(newNode.next.data);
-    
+        Node head = firsNode;
+        
+
 
         
     }

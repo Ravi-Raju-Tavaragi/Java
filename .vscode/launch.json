@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SinglyLinkedList",
+            "request": "launch",
+            "mainClass": "Fri25SEP.SinglyLinkedList",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Palindrome",
             "request": "launch",
             "mainClass": "Visualization_Problems.Palindrome",

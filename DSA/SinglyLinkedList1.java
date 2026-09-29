@@ -29,7 +29,7 @@ public class SinglyLinkedList1
         newNode.data = data;
         newNode.next = null;
 
-        Node temp = head;//temp node
+        Node temp = head;//temp
         while (temp.next != null)
             temp = temp.next;
 

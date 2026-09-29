@@ -1,4 +1,4 @@
-package Fri25SEP;
+package DSA;
 
 public class Node 
 {

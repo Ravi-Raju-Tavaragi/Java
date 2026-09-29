@@ -1,4 +1,4 @@
-package Fri25SEP;
+package DSA;
 
 public class SinglyLinkedList
 {
@@ -39,7 +39,7 @@ public class SinglyLinkedList
         newNode.next = firsNode;
         firsNode.next = newNode;
 
-        Node head = firsNode;
+       
         
 
 

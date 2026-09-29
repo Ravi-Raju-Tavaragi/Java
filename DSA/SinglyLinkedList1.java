@@ -1,4 +1,4 @@
-package Fri25SEP;
+package DSA;
 
 public class SinglyLinkedList1
 {
@@ -25,15 +25,15 @@ public class SinglyLinkedList1
 
     public static void insertAtEnd(int data, Node head)
     {
-        Node newNode = new Node();
+        Node newNode = new Node();//newnode-->lastnode inserting at end
         newNode.data = data;
         newNode.next = null;
 
-        Node temp = head;
+        Node temp = head;//temp node
         while (temp.next != null)
             temp = temp.next;
 
-        temp.next = newNode;
+        temp.next = newNode;//lastnode-->newnode
     }
 
 

@@ -41,11 +41,13 @@ public class MyArray
         else
         {
             //shift element one position to right
-            for(int i = rightIndex-1; i >= 0; i--)
+            for(int i = rightIndex-1; rightIndex >= 0; rightIndex--)
             {
                 array[i+1] = array[i];
             }
+
             // inserting value at array[0]
+            array[0] = value;
             rightIndex++;
         }
     }

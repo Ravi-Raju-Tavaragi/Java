@@ -29,6 +29,17 @@ public class ArrayDemo
         System.out.println("After Inserting Elements at gien position");
         myArray.printArrayElements();
 
+        //Edge cases
+        System.out.println("Checking Edge cases");
+        myArray.insertAtAnyPosition(10, -1);
+        myArray.insertAtAnyPosition(2, 7);
+        myArray.printArrayElements();
+
+
+        System.out.println("After Inserting Elements at End --> checking array full");
+        myArray.insertAtEnd(70);
+        myArray.printArrayElements();
+
     }
     
 }

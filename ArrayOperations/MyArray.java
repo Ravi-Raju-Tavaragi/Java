@@ -12,5 +12,21 @@ public class MyArray
         array = new int[length]; // [0][0][0][0][0] --> initial array
         rightIndex = 0;
     }
+
+
+
+    // insert at end
+    public void insertAtEnd(int value)
+    {
+        if ( rightIndex == length)
+        {
+            System.out.println("Array is Full");
+            return ;
+        }
+
+        array[rightIndex] = value;
+        rightIndex++; // After index at the end size was updated to inserted element
+
+    }
     
 }

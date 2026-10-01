@@ -88,7 +88,7 @@ public class MyArray
         {
             System.out.println(i+"\t"+array[i]);
         }
-        System.err.println("size"+rightIndex);
+        System.err.println("size : "+rightIndex);
         System.out.println();
     }
 }

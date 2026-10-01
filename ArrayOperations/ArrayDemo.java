@@ -11,7 +11,8 @@ public class ArrayDemo
     {
         MyArray myArray = new MyArray();
         
-
+        System.out.println("Initial Array");
+        myArray.printArrayElements();
     }
     
 }

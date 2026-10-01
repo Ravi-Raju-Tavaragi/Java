@@ -41,15 +41,15 @@ public class MyArray
         else
         {
             //shift element one position to right
-            for(int i = rightIndex-1; rightIndex >= 0; rightIndex--)
+            for(int i = rightIndex-1; i >= 0; i--)
             {
                 array[i+1] = array[i];
             }
-
-            // inserting value at array[0]
-            array[0] = value;
-            rightIndex++;//we are increasing size of the array
         }
+
+        // inserting value at array[0]
+        array[0] = value;
+        rightIndex++;//we are increasing size of the array
     }
 
 
@@ -69,7 +69,7 @@ public class MyArray
         }
 
         //shift and insert
-        for(int i = rightIndex - 1; rightIndex >= position; rightIndex--)
+        for(int i = rightIndex - 1; i >= position; i--)
         {
             array[i+1] = array[i];
         }

@@ -48,8 +48,35 @@ public class MyArray
 
             // inserting value at array[0]
             array[0] = value;
-            rightIndex++;
+            rightIndex++;//we are increasing size of the array
         }
+    }
+
+
+    //insert at any position
+    public void insertAtAnyPosition(int value, int position)
+    {
+        if ( rightIndex == length )
+        {
+            System.out.println("Array is full");
+            return ;
+        }
+
+        if ( position < 0 || position > rightIndex)
+        {
+            System.out.println("Invalid position");
+            return ;
+        }
+
+        //shift and insert
+        for(int i = rightIndex - 1; rightIndex >= position; rightIndex--)
+        {
+            array[i+1] = array[i];
+        }
+
+        //inserting value at position
+        array[position] = value;
+        rightIndex++;
     }
     
 }

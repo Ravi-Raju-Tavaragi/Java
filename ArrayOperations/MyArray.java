@@ -79,4 +79,16 @@ public class MyArray
         rightIndex++;
     }
     
+
+    //print elements
+    public void printArrayElements()
+    {
+        System.out.println("index\tvalue");
+        for(int i = 0; i < length; i++)
+        {
+            System.out.println(i+"\t"+array[i]);
+        }
+        System.err.println("size"+rightIndex);
+        System.out.println();
+    }
 }

@@ -28,5 +28,26 @@ public class MyArray
         rightIndex++; // After index at the end size was updated to inserted element
 
     }
+
+    // insert at start
+    public void insertAtStart(int value)
+    {
+        if ( rightIndex == length)
+        {
+            System.out.println("Array is Full");
+            return ;
+        }
+
+        else
+        {
+            //shift element one position to right
+            for(int i = rightIndex-1; i >= 0; i--)
+            {
+                array[i+1] = array[i];
+            }
+            // inserting value at array[0]
+            rightIndex++;
+        }
+    }
     
 }

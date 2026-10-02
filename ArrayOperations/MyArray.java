@@ -108,7 +108,7 @@ public class MyArray
         //shift element form index = 0 (from start)
         else
         {
-            for(int i = 0; i < rightIndex; i++)
+            for(int i = 0; i < rightIndex - 1; i++)
             {
                 array[i] = array[i+1];
             }
@@ -136,7 +136,7 @@ public class MyArray
         //shift element form index = position (from position)
         else
         {
-            for(int i = position; i < rightIndex; i++)
+            for(int i = position; i < rightIndex - 1; i++)
             {
                 array[i] = array[i+1];
             }

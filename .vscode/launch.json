@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinearSearch",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.LinearSearch",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ArrayDemo",
             "request": "launch",
             "mainClass": "ArrayOperations.ArrayDemo",

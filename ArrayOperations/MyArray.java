@@ -79,9 +79,32 @@ public class MyArray
         array[position] = value;
         rightIndex++;
     }
-    
 
-    //print elements
+
+
+    //array deleting 
+    // delete at end
+    public void deleteAtEnd()
+    {
+        if ( rightIndex == 0)
+        {
+            System.out.println("Array is Empty");
+            return ;
+        }
+
+        array[rightIndex-1] = 0;
+        rightIndex--;
+    }
+
+
+
+
+
+
+
+
+
+         //print elements
     public void printArrayElements()
     {
         System.out.println("index\tvalue");
@@ -92,4 +115,6 @@ public class MyArray
         System.err.println("size : "+rightIndex);
         System.out.println();
     }
+
+    
 }

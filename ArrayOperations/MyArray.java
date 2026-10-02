@@ -127,7 +127,7 @@ public class MyArray
             return ;
         }
 
-        if ( position < 0 || position > rightIndex)
+        if ( position < 0 || position >= rightIndex)
         {
             System.out.println("Invalid position");
             return ;

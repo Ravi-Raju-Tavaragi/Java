@@ -93,7 +93,7 @@ public class MyArray
         }
 
         array[rightIndex-1] = 0;
-        rightIndex--;
+        rightIndex--;//we are reducing size because w deleted 1 element out of 5
     }
 
     //delete at start
@@ -114,7 +114,7 @@ public class MyArray
             }
 
         }
-        rightIndex--;
+        rightIndex--; //we are reducing size because w deleted 1 element out of 5
         array[rightIndex] = 0;
     }
 
@@ -142,7 +142,7 @@ public class MyArray
             }
 
         }
-        rightIndex--;
+        rightIndex--; // we are reducing size because w deleted 1 element out of 5
         array[rightIndex] = 0;
     }
 

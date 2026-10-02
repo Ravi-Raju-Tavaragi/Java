@@ -34,7 +34,7 @@ public class MyArray
     {
         if ( rightIndex == length)
         {
-            System.out.println("Array is Full");
+            System.out.println("Array is Full");// [50][10][20][30][40] --> initial array
             return ;
         }
 
@@ -70,6 +70,7 @@ public class MyArray
 
         //shift and insert
         for(int i = rightIndex - 1; i >= position; i--)
+
         {
             array[i+1] = array[i];
         }

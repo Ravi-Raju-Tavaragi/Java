@@ -20,13 +20,13 @@ public class ArrayDemo
         myArray.printArrayElements();
 
 
-      /*   myArray.deleteFromEnd();
+        myArray.deleteFromEnd();
         System.out.println("Deleting Element at End");
-        myArray.printArrayElements();*/
+        myArray.printArrayElements();
 
-      /*   myArray.deleteFromStart();
+        myArray.deleteFromStart();
         System.out.println("Deleting Element at Start");
-        myArray.printArrayElements(); */
+        myArray.printArrayElements();
 
         myArray.deleteFromAnyPosition(2);
         System.out.println("Deleting Element at AnyPosition");

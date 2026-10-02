@@ -133,7 +133,7 @@ public class MyArray
             return ;
         }
 
-        //shift element form index = 0 (from start)
+        //shift element form index = position (from position)
         else
         {
             for(int i = position; i < rightIndex; i++)

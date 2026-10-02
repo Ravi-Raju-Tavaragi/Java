@@ -7,8 +7,8 @@ public class ArrayDemo
     {
         MyArray myArray = new MyArray();
         
-        System.out.println("Initial Array");
-        myArray.printArrayElements();
+        /*System.out.println("Initial Array");
+        myArray.printArrayElements();*/
 
         myArray.insertAtEnd(10);
         myArray.insertAtEnd(20);
@@ -18,6 +18,20 @@ public class ArrayDemo
 
         System.out.println("After Inserting Elements at End");
         myArray.printArrayElements();
+
+
+        myArray.deleteFromEnd();
+        System.out.println("Deleting Element at End");
+        myArray.printArrayElements();
+
+        myArray.deleteFromStart();
+        System.out.println("Deleting Element at Start");
+        myArray.printArrayElements();
+
+         myArray.deleteFromAnyPosition(2);
+        System.out.println("Deleting Element at AnyPosition");
+        myArray.printArrayElements();
+
 
        /*myArray.insertAtStart(5);
         System.out.println("After Inserting Elements at Start");

@@ -84,7 +84,7 @@ public class MyArray
 
     //array deleting 
     // delete at end
-    public void deleteAtEnd()
+    public void deleteFromEnd()
     {
         if ( rightIndex == 0)
         {
@@ -96,10 +96,55 @@ public class MyArray
         rightIndex--;
     }
 
+    //delete at start
+    public void deleteFromStart()
+    {
+        if ( rightIndex == 0)
+        {
+            System.out.println("Array is Empty");
+            return ;
+        }
 
+        //shift element form index = 0 (from start)
+        else
+        {
+            for(int i = 0; i < rightIndex; i++)
+            {
+                array[i] = array[i+1];
+            }
 
+        }
+        rightIndex--;
+        array[rightIndex] = 0;
+    }
 
+    //delete at any position
+    public void deleteFromAnyPosition(int position)
+    {
+        if ( rightIndex == 0)
+        {
+            System.out.println("Array is Empty");
+            return ;
+        }
 
+        if ( position < 0 || position > rightIndex)
+        {
+            System.out.println("Invalid position");
+            return ;
+        }
+
+        //shift element form index = 0 (from start)
+        else
+        {
+            for(int i = position; i < rightIndex; i++)
+            {
+                array[i] = array[i+1];
+            }
+
+        }
+        rightIndex--;
+        array[rightIndex] = 0;
+    }
 
 
 

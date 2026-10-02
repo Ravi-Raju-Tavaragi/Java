@@ -1,5 +1,7 @@
 package SearchingOperationInArray;
 
+import java.util.Scanner;
+
 public class LinearSearch
 {
     public static void linearSearch(int[] array, int key)
@@ -30,11 +32,26 @@ public class LinearSearch
 
     public static void main(String[] args) 
     {
-        
-        int[] array = {10, 20, 30, 40, 50};
-        int key = 40;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter size of array : ");
+        int n = sc.nextInt();
+
+        int array[] = new int[n];
+
+        System.out.println("Enter "+n+" Elements");
+
+        for(int i = 0; i < n; i++)
+        {
+            array[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter search element");
+        int key = sc.nextInt();
 
         linearSearch(array, key);
+
+        sc.close();
     
     } 
     

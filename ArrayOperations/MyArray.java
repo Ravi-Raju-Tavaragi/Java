@@ -149,7 +149,7 @@ public class MyArray
 
 
 
-         //print elements
+    //print elements
     public void printArrayElements()
     {
         System.out.println("index\tvalue");
@@ -157,7 +157,8 @@ public class MyArray
         {
             System.out.println(i+"\t"+array[i]);
         }
-        System.err.println("size : "+rightIndex);
+
+        System.out.println("size : "+rightIndex);
         System.out.println();
     }
 

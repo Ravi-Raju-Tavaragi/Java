@@ -16,13 +16,11 @@ public class LinearSearch
                 found = true;
                 break;
             }
-
         }
 
         if (found == false)
         {
-            System.out.println("Element Not Found");
-            
+            System.out.println("Element Not Found");    
         }
 
     }

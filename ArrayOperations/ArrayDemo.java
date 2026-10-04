@@ -33,7 +33,7 @@ public class ArrayDemo
         myArray.printArrayElements();
 
 
-       /*myArray.insertAtStart(5);
+        myArray.insertAtStart(5);
         System.out.println("After Inserting Elements at Start");
         myArray.printArrayElements();
 
@@ -50,7 +50,7 @@ public class ArrayDemo
 
         System.out.println("After Inserting Elements at End --> checking array full");
         myArray.insertAtEnd(70);
-        myArray.printArrayElements();*/
+        myArray.printArrayElements();
 
     }
     

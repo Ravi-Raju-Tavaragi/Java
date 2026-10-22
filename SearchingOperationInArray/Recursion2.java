@@ -4,7 +4,7 @@ public class Recursion2
 {
     static void fun(int n)
     {
-       if(n > 3)
+       if(n > 0)
        {
             System.out.println("Enter : "+n);
 
@@ -13,10 +13,22 @@ public class Recursion2
             System.out.println("Exit : "+n);
        }
     }
+
+    static void print(int i)
+    {
+        if(i > 5)
+        {
+            return ;
+        }
+
+        System.out.println(i);
+        print(i+1);
+    }
     
 
     public static void main(String[] args) 
     {
         fun(3);
+        print(1);
     }
 }

@@ -37,11 +37,33 @@ public class Recursion2
         print2(N-1);
     }
     
+    static int count(int M)
+    {
+        int funcount = 1;
+       
+        if(M > 0)
+        {
+            count(M - 1);
+            funcount = funcount + 1;
+        }
+
+        return funcount;
+    }
+
+    static int sum(int n)
+    {
+        if(n == 0)
+            return 0;
+
+        return n + sum(n-1);
+    }
 
     public static void main(String[] args) 
     {
         fun(3);
         print(1);
         print2(10);
+        System.out.println("sum of n numbers : " + sum(5));
+        
     }
 }

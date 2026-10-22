@@ -24,11 +24,24 @@ public class Recursion2
         System.out.println(i);
         print(i+1);
     }
+
+
+    static void print2(int N)
+    {
+        if(N < 1)
+        {
+            return ;
+        }
+
+        System.out.println(N);
+        print2(N-1);
+    }
     
 
     public static void main(String[] args) 
     {
         fun(3);
         print(1);
+        print2(10);
     }
 }

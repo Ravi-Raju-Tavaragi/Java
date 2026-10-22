@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Recursion",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.Recursion",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "LinearSearch",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.LinearSearch",

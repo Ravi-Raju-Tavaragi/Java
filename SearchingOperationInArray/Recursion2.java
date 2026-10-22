@@ -58,12 +58,24 @@ public class Recursion2
         return n + sum(n-1);
     }
 
+
+    static int factorial(int n)
+    {
+        if(n == 1)
+            return 0;
+
+        return n * factorial(n-1);
+    }
+
+    
+
     public static void main(String[] args) 
     {
         fun(3);
         print(1);
         print2(10);
         System.out.println("sum of n numbers : " + sum(5));
+        System.out.println("Factorial of n numbers : " + factorial(5));
         
     }
 }

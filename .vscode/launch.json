@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.MergeSort",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Recursion2",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.Recursion2",

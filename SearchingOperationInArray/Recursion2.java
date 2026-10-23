@@ -67,6 +67,14 @@ public class Recursion2
         return n * factorial(n-1);
     }
 
+    static int power(int n, int M)
+    {
+        if(M == 0)
+            return 1;
+
+        return n * power(n, M - 1);
+    }
+
     
 
     public static void main(String[] args) 
@@ -76,6 +84,7 @@ public class Recursion2
         print2(10);
         System.out.println("sum of n numbers : " + sum(5));
         System.out.println("Factorial of n numbers : " + factorial(5));
+        System.out.println("Power of Nuber : " + power(2, 5));
         
     }
 }

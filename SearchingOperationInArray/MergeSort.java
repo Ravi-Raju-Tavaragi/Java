@@ -2,10 +2,10 @@ package SearchingOperationInArray;
 
 public class MergeSort
 {
-    static int[] Mergesort(int[] array, int low, int high)
+    static void Mergesort(int[] array, int low, int high)
     {
         if(low >= high)
-            return new int[] {-1};
+            return;
 
         int mid = low + ((high - low) / 2);
 
@@ -13,12 +13,10 @@ public class MergeSort
         Mergesort(array, mid + 1, high);
         Merge(array, low, mid, high);
 
-        return array;
-
     }
 
 
-    static int[] Merge(int[] array, int low, int mid, int high)
+    static void Merge(int[] array, int low, int mid, int high)
     {
         int[] temp = new int[high - low + 1];
 
@@ -41,45 +39,67 @@ public class MergeSort
 
             k++;
         }
-            while(i <= mid)
-            {
-                temp[k] = array[i];
-                i++;
-                k++;
-            }
 
-            while(j <= high)
-            {
-                temp[k] = array[j];
-                j++;
-                k++;
-            }
+        while(i <= mid)
+        {
+            temp[k] = array[i];
+            i++;
+            k++;
+        }
 
-            for(k = 0; k < temp.length; k++)
-            {
-                array[low + k] = temp[k];
-            }
+        while(j <= high)
+        {
+            temp[k] = array[j];
+            j++;
+            k++;
+        }
 
-            return array;
+       
+        for(i = low, k = 0; i <= high; i++, k++)
+        {
+            array[i] = temp[k];
+        }
+
+
+        /*
+        for(k = 0; k < temp.length; k++)
+        {
+            array[low + k] = temp[k];
+        }
+
+        */
 
     }
 
     public static void main(String[] args) 
     {
         int[] array = {10, 4, 8, 5, 6, 3, 7, 2, 1};
-        System.out.println("Un-Sorted array");
+        System.out.println("\nUn-Sorted array");
         for(int i = 0; i < array.length; i++)
         {
             System.out.print(array[i]+ ", ");
         }
 
         Mergesort(array, 0, array.length - 1);
-        System.out.println("/n Sorted array");
+        System.out.println("\nSorted array");
         for(int i = 0; i < array.length; i++)
         {
             System.out.print(array[i]+ ", ");
         }
         
+        int[] array1 = {};
+        System.out.println("\nUn-Sorted array");
+        for(int i = 0; i < array1.length; i++)
+        {
+            System.out.print(array1[i]+ ", ");
+        }
+
+        Mergesort(array1, 0, array1.length - 1);
+        System.out.println("\nSorted array");
+        for(int i = 0; i < array1.length; i++)
+        {
+            System.out.print(array1[i]+ ", ");
+        }
     }
     
 }

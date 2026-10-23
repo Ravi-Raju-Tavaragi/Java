@@ -71,35 +71,31 @@ public class MergeSort
 
     }
 
+    static void printarray(int[] array)
+    {
+        for(int i = 0; i < array.length; i++)
+        {
+            System.out.print(array[i]+", ");
+        }
+    }
+
     public static void main(String[] args) 
     {
         int[] array = {10, 4, 8, 5, 6, 3, 7, 2, 1};
         System.out.println("\nUn-Sorted array");
-        for(int i = 0; i < array.length; i++)
-        {
-            System.out.print(array[i]+ ", ");
-        }
+        printarray(array);
 
-        Mergesort(array, 0, array.length - 1);
         System.out.println("\nSorted array");
-        for(int i = 0; i < array.length; i++)
-        {
-            System.out.print(array[i]+ ", ");
-        }
+        Mergesort(array, 0, array.length - 1);
+        printarray(array);
         
         int[] array1 = {};
         System.out.println("\nUn-Sorted array");
-        for(int i = 0; i < array1.length; i++)
-        {
-            System.out.print(array1[i]+ ", ");
-        }
+        printarray(array1);
 
         Mergesort(array1, 0, array1.length - 1);
         System.out.println("\nSorted array");
-        for(int i = 0; i < array1.length; i++)
-        {
-            System.out.print(array1[i]+ ", ");
-        }
+        printarray(array1);
     }
     
 }

@@ -73,6 +73,22 @@ public class ArrayRighttoLeftTravarsal
     }
 
 
+    //reverse copy
+    static int[] reverseArray(int[] array)
+    {
+        if(array == null || array.length == 0)
+            return new int[] {0};
+        int newarray[] = new int[array.length]; 
+        int j = 0;
+        for(int i = array.length - 1; i >= 0; i--)
+        {
+            newarray[j] = array[i];
+            j++;
+        }
+
+        return newarray;
+    }
+
     public static void main(String[] args) 
     { 
         int[] array = {12, -345, 2, 6, 7896, 12};
@@ -82,6 +98,14 @@ public class ArrayRighttoLeftTravarsal
         System.out.println(firstNegativeNumber(array1));
 
         System.out.println(lasttPositiveNumber(array1));
+
+        int[] array2 = {0, 2, 1, 5, 3, 4};
+
+        int result[] = reverseArray(array2);
+        for(int i = 0; i < result.length; i++)
+        {
+            System.out.print(result[i]+", ");
+        }
 
 
     }

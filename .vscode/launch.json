@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayPermultation",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.ArrayPermultation",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "NumberSmallerThanCurrentNum",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.NumberSmallerThanCurrentNum",

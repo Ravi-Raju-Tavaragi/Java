@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EvenDigitCount",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.EvenDigitCount",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "MergeSort",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.MergeSort",

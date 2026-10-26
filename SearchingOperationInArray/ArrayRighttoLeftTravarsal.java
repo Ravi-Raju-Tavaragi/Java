@@ -78,6 +78,7 @@ public class ArrayRighttoLeftTravarsal
     {
         if(array == null || array.length == 0)
             return new int[] {0};
+
         int newarray[] = new int[array.length]; 
         int j = 0;
         for(int i = array.length - 1; i >= 0; i--)
@@ -87,6 +88,26 @@ public class ArrayRighttoLeftTravarsal
         }
 
         return newarray;
+    }
+
+    //elements greater than a given value
+    static int[] numGreaterThanGivenElement(int[] array, int value)
+    {
+        if(array == null || array.length == 0)
+            return new int[] {0};
+
+        int newarray[] = new int[array.length]; 
+        int j = 0;        
+
+        for(int i = array.length - 1; i >= 0; i--)
+        {
+            if(array[i] > value)
+                newarray[j] = array[i];
+                j++;
+        }
+
+        return newarray;
+
     }
 
     public static void main(String[] args) 
@@ -106,6 +127,16 @@ public class ArrayRighttoLeftTravarsal
         {
             System.out.print(result[i]+", ");
         }
+
+        System.out.println();
+        int value = 1;
+        int result2[] = numGreaterThanGivenElement(array2, value);
+        for(int i = 0; i < result.length; i++)
+        {
+            System.out.print(result2[i]+", ");
+        }
+
+
 
 
     }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumberSmallerThanCurrentNum",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.NumberSmallerThanCurrentNum",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "EvenDigitCount",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.EvenDigitCount",

@@ -2,7 +2,7 @@ package SearchingOperationInArray;
 
 public class ArrayPermultation
 {
-    public static  int[] buildArray(int[] nums) 
+    public static int[] buildArray(int[] nums) 
     {
         if(nums == null || nums.length == 0)
             return new int[] {0};
@@ -13,7 +13,7 @@ public class ArrayPermultation
             ans[i] = nums[nums[i]];
         }
 
-        return nums;
+        return ans;
     }
 
 

@@ -111,6 +111,7 @@ public class ArrayRighttoLeftTravarsal
     }
 
 
+    //in place string reverse
     static int[] inPlaceStringReplace(int[] nums)
     {
         if(nums == null || nums.length == 0)
@@ -131,6 +132,33 @@ public class ArrayRighttoLeftTravarsal
 
         return nums;
 
+    }
+
+
+    //Move Zeros to front
+    static int[] moveZeros(int[] nums)
+    {
+        if(nums == null || nums.length == 0)
+            return nums;
+
+        int position = nums.length - 1;
+
+        for(int i = nums.length - 1; i >= 0; i--)
+        {
+            if(nums[i] != 0)
+            {
+                nums[position] = nums[i];
+                position--;
+            }
+        }
+
+        while(position >= 0)
+        {
+            nums[position] = 0;
+            position--;
+        }
+
+        return nums;
     }
 
     public static void main(String[] args) 
@@ -171,6 +199,15 @@ public class ArrayRighttoLeftTravarsal
         }
 
 
+        System.out.println();
+        int[] num1 = {4, 0, 2, 0, 7, 0, 5};
+
+        moveZeros(num1);
+
+        for(int i = 0; i < num1.length; i++)
+        {
+            System.out.print(num1[i] + " ");
+        }
 
 
     }

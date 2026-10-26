@@ -2,6 +2,7 @@ package SearchingOperationInArray;
 
 public class ArrayRighttoLeftTravarsal 
 {
+    // count even number positions
     static int countEvenNumbers(int[] nums)
     {
         if(nums == null || nums.length == 0)
@@ -32,11 +33,31 @@ public class ArrayRighttoLeftTravarsal
         return evendigitcount;
     }
 
+    static int firstNegativeNumber(int[] nums)
+    {
+        
+        if(nums == null || nums.length == 0)
+            return -1;
+
+        int result = nums[nums.length - 1];
+        for(int i = nums.length - 1; i >= 0; i--)
+        {
+            if(nums[i] < 0)
+                result = nums[i];
+        }
+        return result;
+    }
+
 
     public static void main(String[] args) 
     { 
         int[] array = {12, 345, 2, 6, 7896, -12};
         System.out.println(countEvenNumbers(array));
+
+        int[] array1 = {12, 345, 2, 6, 7896, -12};
+        System.out.println(firstNegativeNumber(array1));
+
+
     }
     
 }

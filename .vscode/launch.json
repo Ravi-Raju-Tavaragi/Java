@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayRighttoLeftTravarsal",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.ArrayRighttoLeftTravarsal",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ArrayConcatinate",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.ArrayConcatinate",

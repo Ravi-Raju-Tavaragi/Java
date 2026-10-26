@@ -110,6 +110,29 @@ public class ArrayRighttoLeftTravarsal
 
     }
 
+
+    static int[] inPlaceStringReplace(int[] nums)
+    {
+        if(nums == null || nums.length == 0)
+            return nums;
+
+        int left = 0;
+        int right = nums.length - 1;
+
+        while(left < right)
+        {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+
+            left++;
+            right--;
+        }
+
+        return nums;
+
+    }
+
     public static void main(String[] args) 
     { 
         int[] array = {12, -345, 2, 6, 7896, 12};
@@ -134,6 +157,17 @@ public class ArrayRighttoLeftTravarsal
         for(int i = 0; i < result.length; i++)
         {
             System.out.print(result2[i]+", ");
+        }
+
+
+        System.out.println();
+        int[] nums = {10, 20, 30, 40, 50};
+
+        inPlaceStringReplace(nums);
+
+        for(int i = 0; i < nums.length; i++)
+        {
+            System.out.print(nums[i] + " ");
         }
 
 

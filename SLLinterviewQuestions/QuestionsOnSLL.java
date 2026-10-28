@@ -65,7 +65,85 @@ public class QuestionsOnSLL
     }
 
 
+    //WFTO make circular LL
+    static Node getNodeCLL(Node head)
+    {
+        if(head == null)
+            return null;
 
+        while (head.next != null) 
+        {
+            head = head.next;   
+        }
+        return head;
+    }
+
+    static void joinTwoLList(Node listhead1, Node listhead2)
+    {
+        if(listhead1 == null && listhead2 == null)
+            return ;
+
+        /*if(listhead1 == null || listhead2 == null)
+        {
+            Node list = null;
+            if(listhead1 == null)
+                list = listhead2;
+            else
+                list = listhead1;
+
+            Node lastNode =getNodeCLL(list);
+            lastNode.next = list;
+            return ;
+        }
+
+        Node List1Tail = getNodeCLL(listhead1);
+        Node List2Tail = getNodeCLL(listhead2);
+
+        List1Tail.next = listhead2;
+        List2Tail.next = listhead1;*/
+        if(listhead1 == null)
+        {
+            Node lastNode = getNodeCLL(listhead2);
+            lastNode.next = listhead2;
+            return;
+        }
+
+        if(listhead2 == null)
+        {
+            Node lastNode = getNodeCLL(listhead1);
+            lastNode.next = listhead1;
+            return;
+        }
+
+        Node list1Tail = getNodeCLL(listhead1);
+        Node list2Tail = getNodeCLL(listhead2);
+
+        list1Tail.next = listhead2;
+        list2Tail.next = listhead1;
+    }
+
+
+    static void printCLL2(Node head)
+    {
+        if(head == null)
+        {
+            System.out.println("List empty");
+            return;
+        }
+
+        Node current = head;
+
+        System.out.print("head --> ");
+
+        do
+        {
+            System.out.print(current.data + " --> ");
+            current = current.next;
+        }
+        while(current != head);
+
+        System.out.println("(back to head)");
+    }
 
     public static void main(String[] args) 
     {
@@ -88,7 +166,18 @@ public class QuestionsOnSLL
             System.out.println("Node not found");
 
         System.out.println(getNumberOfNodes(head));
+
+        Node head2 = null;
+        head2 = insertAtStart( 1000, head2);
+        head2 = insertAtStart(900, head2);
+        head2 = insertAtStart(800, head2);
+        head2 = insertAtStart(700, head2);
+        head2 = insertAtStart(600, head2);
+        printSLL(head2);
         
+        System.out.println();
+        joinTwoLList(head, head2);
+        printCLL2(head);
     }
     
 }

@@ -49,6 +49,21 @@ public class QuestionsOnSLL
         return head;
     }
 
+    //return number of nodes in singly linked list
+    static int getNumberOfNodes(Node head)
+    {
+        if(head == null)
+            return 0;
+
+        int count = 1;
+        while(head != null)
+        {
+            head = head.next;
+            count++;
+        }
+        return count;
+    }
+
 
 
 
@@ -63,12 +78,16 @@ public class QuestionsOnSLL
         head = insertAtStart(100, head);
         printSLL(head);
 
+
+        System.out.println();
         Node result = getNode(head, 3);
 
         if(result != null)
             System.out.println("Node data: " + result.data);
         else
             System.out.println("Node not found");
+
+        System.out.println(getNumberOfNodes(head));
         
     }
     

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "SearchingOperationInArray.QuickSort",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ArrayRighttoLeftTravarsal",
             "request": "launch",
             "mainClass": "SearchingOperationInArray.ArrayRighttoLeftTravarsal",

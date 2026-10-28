@@ -9,8 +9,6 @@ public class QuestionsOnSLL
             System.out.println("List emty");
             return ;
         }    
-        
-
         System.out.print("head -->");
 
         while(head != null)
@@ -32,6 +30,28 @@ public class QuestionsOnSLL
        return newNode;
     }
 
+
+    //return nth node
+    static Node getNode(Node head, int n)
+    {
+        if(head == null || n <= 0)
+            return null;
+
+        int count = 1;
+        while(count <= n)
+        {
+            count = count + 1;
+            if(head == null)
+                return null;
+            else
+                head = head.next;
+        }
+        return head;
+    }
+
+
+
+
     public static void main(String[] args) 
     {
         System.out.println("\n Insert at start single node");
@@ -43,6 +63,12 @@ public class QuestionsOnSLL
         head = insertAtStart(100, head);
         printSLL(head);
 
+        Node result = getNode(head, 3);
+
+        if(result != null)
+            System.out.println("Node data: " + result.data);
+        else
+            System.out.println("Node not found");
         
     }
     

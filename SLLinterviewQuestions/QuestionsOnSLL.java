@@ -145,6 +145,28 @@ public class QuestionsOnSLL
         System.out.println("(back to head)");
     }
 
+    // Return Midle Node Value
+    static int midleNode(Node head)
+    {
+        if(head == null)
+            return 0;
+
+        Node slow = head;
+        Node fast = head;
+ 
+        //odd case
+        while(fast.next != null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            // Even case
+            if(fast == null)
+                return slow.data;
+        }
+        return slow.data;
+    }
+
     public static void main(String[] args) 
     {
         System.out.println("\n Insert at start single node");
@@ -168,16 +190,25 @@ public class QuestionsOnSLL
         System.out.println(getNumberOfNodes(head));
 
         Node head2 = null;
-        head2 = insertAtStart( 1000, head2);
         head2 = insertAtStart(900, head2);
         head2 = insertAtStart(800, head2);
         head2 = insertAtStart(700, head2);
         head2 = insertAtStart(600, head2);
         printSLL(head2);
-        
+      /*   
         System.out.println();
         joinTwoLList(head, head2);
         printCLL2(head);
+      */
+       
+        System.out.println();
+        int result1 = midleNode(head);
+        System.out.println(result1 + " Odd Number of nodes");
+
+        System.out.println();
+        int result2 = midleNode(head2);
+        System.out.println(result2 + " Even Number of nodes");
+
     }
     
 }

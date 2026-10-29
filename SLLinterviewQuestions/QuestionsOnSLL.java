@@ -185,6 +185,26 @@ public class QuestionsOnSLL
         return firsttNodeValue + lastNodeValue;
     }
 
+    // Same elements in list
+    static boolean isSameList(Node first, Node second)
+    {
+        if(first == null || second == null)
+            return false;
+
+        while(first != null && second != null)
+        {
+            if(first.data != second.data)
+                return false;
+
+            first = first.next;
+            second = second.next;
+        }
+        if(first == null && second == null)
+            return true;
+        else
+            return false;
+    }
+
     public static void main(String[] args) 
     {
         System.out.println("\n Insert at start single node");
@@ -229,6 +249,9 @@ public class QuestionsOnSLL
 
         System.out.println();
         System.out.println(sumOfFirstandLastNode(head) + " Sum of First and Last Node data");
+
+        System.out.println();
+        System.out.println(isSameList(head, head2));
 
     }
     

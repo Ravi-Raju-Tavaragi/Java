@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "SLLinterviewQuestions.Test",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "QuestionsOnSLL",
             "request": "launch",
             "mainClass": "SLLinterviewQuestions.QuestionsOnSLL",

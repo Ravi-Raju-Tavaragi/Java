@@ -155,7 +155,7 @@ public class QuestionsOnSLL
         Node fast = head;
  
         //odd case
-        while(fast.next != null)
+        while(fast != null && fast.next != null)
         {
             slow = slow.next;
             fast = fast.next.next;
@@ -212,8 +212,8 @@ public class QuestionsOnSLL
         head = insertAtStart( 500, head);
         head = insertAtStart(400, head);
         head = insertAtStart(300, head);
-        head = insertAtStart(200, head);
-        head = insertAtStart(100, head);
+      //  head = insertAtStart(200, head);
+       // head = insertAtStart(100, head);
         printSLL(head);
 
 

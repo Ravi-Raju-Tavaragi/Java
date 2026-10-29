@@ -167,6 +167,24 @@ public class QuestionsOnSLL
         return slow.data;
     }
 
+    // Sum of First and Last Node
+    static int sumOfFirstandLastNode(Node head)
+    {
+        if(head == null)
+            return 0;
+
+        int firsttNodeValue = head.data;
+        int lastNodeValue = head.data;
+
+        while(head != null)
+        {
+            lastNodeValue = head.data;
+            head = head.next;
+        }
+
+        return firsttNodeValue + lastNodeValue;
+    }
+
     public static void main(String[] args) 
     {
         System.out.println("\n Insert at start single node");
@@ -208,6 +226,9 @@ public class QuestionsOnSLL
         System.out.println();
         int result2 = midleNode(head2);
         System.out.println(result2 + " Even Number of nodes");
+
+        System.out.println();
+        System.out.println(sumOfFirstandLastNode(head) + " Sum of First and Last Node data");
 
     }
     

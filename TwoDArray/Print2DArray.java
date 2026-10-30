@@ -18,12 +18,14 @@ public class Print2DArray
 
         // using for each
 
-        for(int x : a)
+        for(int[] x : a) // [] -- for passing reference 
         {
-            for(int y : a[i])
+            for(int y : x) // x has elements
             {
-                System.out.print();
+                System.out.print(y + " ");
             }
+
+            System.out.println();
         }
     }
     

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JaggedArray",
+            "request": "launch",
+            "mainClass": "TwoDArray.JaggedArray",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "AdditionOf2DArray",
             "request": "launch",
             "mainClass": "TwoDArray.AdditionOf2DArray",

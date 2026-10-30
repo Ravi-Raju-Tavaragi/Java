@@ -16,7 +16,14 @@ public class AdditionOf2DArray
                     c[i][j] = a[i][j] + b[i][j];
                 else
                     c[i][j] = a[i][j] + 0;
-                System.out.print(c[i][j] + " ");
+            }
+        }
+
+        for(int[] x : c)
+        {
+            for(int y : x)
+            {
+                System.out.print(y +" ");
             }
             System.out.println();
         }

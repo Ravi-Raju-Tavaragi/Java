@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Print2DArray",
+            "request": "launch",
+            "mainClass": "TwoDArray.Print2DArray",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Test",
             "request": "launch",
             "mainClass": "SLLinterviewQuestions.Test",

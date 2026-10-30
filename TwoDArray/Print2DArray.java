@@ -8,7 +8,7 @@ public class Print2DArray
 
         for(int i = 0; i < a.length; i++)
         {
-            for(int j = 0; j < a.length; j++)
+            for(int j = 0; j < a[i].length; j++)
             {
                 System.out.print(a[i][j]+ " ");
             }

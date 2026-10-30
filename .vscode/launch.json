@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MatrixMul2D",
+            "request": "launch",
+            "mainClass": "TwoDArray.MatrixMul2D",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Simple2DArrayProb",
+            "request": "launch",
+            "mainClass": "TwoDArray.Simple2DArrayProb",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "JaggedArray",
             "request": "launch",
             "mainClass": "TwoDArray.JaggedArray",

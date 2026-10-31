@@ -13,7 +13,10 @@ public class MatrixMul2D
         {
             for(int j = 0; j < c[i].length; j++)
             {
-                c[i][j] = ((a[i][j] * b[i][j]) + (a[i][j] * b[i][j]) + (a[i][j] * b[i][j]));
+                for(int k = 0; k < a[0].length; k++)
+                {
+                    c[i][k] = ((a[i][j] * b[i][j]) + (a[i][j] * b[i][j]) + (a[i][j] * b[i][j]));
+                }
             }
         }
 

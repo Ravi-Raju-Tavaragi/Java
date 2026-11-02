@@ -48,6 +48,19 @@ public class EachRowColumnSum
             System.out.println();
         }
 
+        // Finding maximum Element in 2DARRAY
+        int max_element = a[0][0];
+        System.out.println();
+        for(int i = 0; i < a.length; i++)
+        {
+            for(int j = 0; j < a[0].length; j++)
+            {
+                if(max_element < a[i][j])
+                    max_element = a[i][j];   
+            }
+        }
+        System.out.println("Max Element in 2D Array : "+max_element);
+
     }
     
 }

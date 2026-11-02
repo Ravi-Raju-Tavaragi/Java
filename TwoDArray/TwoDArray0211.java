@@ -53,19 +53,22 @@ public class TwoDArray0211
 
     public static void printColSingleLoop(int[][] data, int colNumber)
     {
+
+        int colIndex = colNumber - 1;
+
         if(data == null)
             return ;
-        
-        if(colNumber <= 0 || colNumber > data.length)
-        {
-            System.out.println("Invalid col Number");
-            return ;
-        }
 
         System.out.println();
-        for(int row = 0; row < data[colNumber - 1].length; row++)
+        for(int row = 0; row < data.length; row++)
         {
-            System.out.print(data[row][colNumber - 1] + "\n");
+            if(data[row].length <=  colIndex)
+            {
+                System.out.print("No Elements");
+                continue;
+            }
+        
+            System.out.print(data[row][colIndex] + "\n");
         }
     }
 
@@ -74,7 +77,7 @@ public class TwoDArray0211
     {
         int data[][] = {{11, 12, 13, 14, 15}, 
                         {21, 22, 23, 24, 25}, 
-                        {31, 32, 33, 34, 35},
+                        {31, 32, 35},
                         {41, 42, 43, 44, 45}, 
                         {51, 52, 53, 54, 55}};
 
@@ -84,7 +87,10 @@ public class TwoDArray0211
        System.out.println();
        printrowSingleLoop(data, 5);
        System.out.println();
-       printColSingleLoop(data, 1);
+       printColSingleLoop(data, 2);
+
+       System.out.println();
+       printColSingleLoop(data, 4);
        
         
     }

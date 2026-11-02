@@ -61,6 +61,18 @@ public class EachRowColumnSum
         }
         System.out.println("Max Element in 2D Array : "+max_element);
 
+        // Finding minimum element
+        int min_element = a[0][0];
+        System.out.println();
+        for(int i = 0; i < a.length; i++)
+        {
+            for(int j = 0; j < a[0].length; j++)
+            {
+                if(min_element > a[i][j])
+                    min_element = a[i][j];   
+            }
+        }
+        System.out.println("Max Element in 2D Array : "+min_element);
     }
     
 }

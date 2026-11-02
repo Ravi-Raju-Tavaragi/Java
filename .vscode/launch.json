@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoDArray0211",
+            "request": "launch",
+            "mainClass": "TwoDArray.TwoDArray0211",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "EachRowColumnSum",
             "request": "launch",
             "mainClass": "TwoDArray.EachRowColumnSum",

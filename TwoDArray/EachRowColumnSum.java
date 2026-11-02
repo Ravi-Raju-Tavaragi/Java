@@ -17,7 +17,7 @@ public class EachRowColumnSum
             System.out.println(sum1);
         }
 
-        
+        System.out.println();
         for(int i = 0; i < a.length; i++)
         {
             int sum2 = 0;
@@ -26,6 +26,26 @@ public class EachRowColumnSum
                 sum2 = sum2 + a[j][i];
             }
             System.out.println(sum2);
+        }
+
+        System.out.println();
+        for(int i = 0; i < a.length; i++)
+        {
+            for(int j = 0; j < a[0].length; j++)
+            {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        for(int i = 0; i < a.length; i++)
+        {
+            for(int j = 0; j < a[0].length; j++)
+            {
+                System.out.print(a[j][i] + " ");
+            }
+            System.out.println();
         }
 
     }

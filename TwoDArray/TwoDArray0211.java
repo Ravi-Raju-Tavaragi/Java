@@ -88,9 +88,14 @@ public class TwoDArray0211
             {
                 if(row == col)
                 {
-                    System.out.print(data[row][row]+"\n");
+                    System.out.print(data[row][row]+" ");
+                }
+                else
+                {
+                    System.out.print(" 0 ");
                 }
             }
+            System.out.println();
         }
     }
 

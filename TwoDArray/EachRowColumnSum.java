@@ -72,7 +72,20 @@ public class EachRowColumnSum
                     min_element = a[i][j];   
             }
         }
-        System.out.println("Max Element in 2D Array : "+min_element);
+        System.out.println("Min Element in 2D Array : "+min_element);
+
+
+        //sum of all elements
+        System.out.println();
+        int sum = 0;
+        for(int i = 0; i < a.length; i++)
+        {
+            for(int j = 0; j < a[0].length; j++)
+            {
+                sum = sum + a[i][j];
+            }
+        }
+        System.out.println("sum of all elements : "+sum);
     }
     
 }

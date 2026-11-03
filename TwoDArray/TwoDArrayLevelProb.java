@@ -49,6 +49,30 @@ public class TwoDArrayLevelProb
         }
     }
 
+    public static void minEvenElement(int[][] matrix)
+    {
+        if(matrix == null)
+            System.out.println("Array null");
+
+        
+        for(int row = 0; row < matrix.length; row++)
+        {
+            int evenMin = matrix[row][0];
+            for(int col = 0; col < matrix[row].length; col++)
+            {
+                if(evenMin > matrix[row][col])
+                {
+                    if( matrix[row][col] % 2 == 0)
+                    {
+                        evenMin = matrix[row][col];
+                    }
+                }
+            }
+            System.out.println( evenMin + " MIN ");
+        }
+    }
+
+
 
 
 
@@ -63,6 +87,9 @@ public class TwoDArrayLevelProb
         
         System.out.println();
         maxANDminelementinEachRow(array);
+
+        System.out.println();
+        minEvenElement(array);
     }
     
 }

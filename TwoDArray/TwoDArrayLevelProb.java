@@ -132,6 +132,29 @@ public class TwoDArrayLevelProb
     }
 
 
+    public static boolean searchDioganalElement(int matrix[][], int searchElement)
+    {
+        if(matrix == null)
+            System.out.println("Array null");
+
+
+        boolean elementFound = false;
+        for(int row = 0; row < matrix.length; row++)
+        {
+            for(int col = 0; col < matrix[row].length; col++)
+            {
+                if(row == col)
+                {
+                    if(searchElement == matrix[row][col])
+                    {
+                        elementFound = true;
+                        return elementFound;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 
 
 
@@ -160,6 +183,11 @@ public class TwoDArrayLevelProb
         int search = 8;
         boolean result = searchElement(array, search);
         System.out.println(result);
+
+        System.out.println();
+        int search1 = 8;
+        boolean result1 = searchDioganalElement(array, search1);
+        System.out.println(result1);
 
     }
     

@@ -111,6 +111,25 @@ public class TwoDArrayLevelProb
         }
     }
 
+    public static boolean searchElement(int[][] matrix, int searchElement)
+    {
+        if(matrix == null)
+            System.out.println("Array null");
+
+        boolean elementFound = false;
+        for(int row = 0; row < matrix.length; row++)
+        {
+            for(int col = 0; col < matrix[row].length; col++)
+            {
+                if(searchElement == matrix[row][col])
+                {
+                    elementFound = true;
+                    return elementFound;
+                }
+            }
+        }
+        return false;
+    }
 
 
 
@@ -136,6 +155,11 @@ public class TwoDArrayLevelProb
         System.out.println();
         int scalar2 = 10;
         printDioganalTwoLoop(array, scalar2);
+
+        System.out.println();
+        int search = 8;
+        boolean result = searchElement(array, search);
+        System.out.println(result);
 
     }
     

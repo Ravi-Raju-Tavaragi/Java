@@ -72,6 +72,21 @@ public class TwoDArrayLevelProb
         }
     }
 
+    public static void scalarMultiply(int[][] matrix, int scalar)
+    {
+        if(matrix == null)
+            System.out.println("Array null");
+
+        
+        for(int row = 0; row < matrix.length; row++)
+        {
+            for(int col = 0; col < matrix[row].length; col++)
+            {
+                System.out.print(matrix[row][col] * (scalar) + " ");
+            }
+            System.out.println();
+        }
+    }
 
 
 
@@ -90,6 +105,11 @@ public class TwoDArrayLevelProb
 
         System.out.println();
         minEvenElement(array);
+
+        System.out.println();
+        int scalar = -1;
+        scalarMultiply(array, scalar);
+
     }
     
 }

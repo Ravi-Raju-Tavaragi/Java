@@ -88,6 +88,29 @@ public class TwoDArrayLevelProb
         }
     }
 
+    public static void printDioganalTwoLoop(int matrix[][], int scalar)
+    {
+        if(matrix == null)
+            System.out.println("Array null");
+
+
+        for(int row = 0; row < matrix.length; row++)
+        {
+            for(int col = 0; col < matrix[row].length; col++)
+            {
+                if(row == col)
+                {
+                    System.out.print(matrix[row][col] * (scalar) +" ");
+                }
+                else
+                {
+                    System.out.print(" 0 ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
 
 
 
@@ -109,6 +132,10 @@ public class TwoDArrayLevelProb
         System.out.println();
         int scalar = -1;
         scalarMultiply(array, scalar);
+
+        System.out.println();
+        int scalar2 = 10;
+        printDioganalTwoLoop(array, scalar2);
 
     }
     

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoDArrayLevelProb",
+            "request": "launch",
+            "mainClass": "TwoDArray.TwoDArrayLevelProb",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "TwoDArray0211",
             "request": "launch",
             "mainClass": "TwoDArray.TwoDArray0211",

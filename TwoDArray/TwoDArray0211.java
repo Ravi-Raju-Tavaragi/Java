@@ -99,6 +99,14 @@ public class TwoDArray0211
         }
     }
 
+    public static void secondaryDiagonal(int data[][])
+    {
+        for(int row = 0; row < data.length; row++)
+        {
+            System.out.print(data[row][data.length - 1 - row] + " ");
+        }
+    }
+
     public static void printLastColNum(int data[][])
     {
         for(int row = 0; row < data.length; row++)
@@ -136,6 +144,9 @@ public class TwoDArray0211
 
        System.out.println();
        printLastColNum(data);
+
+       System.out.println();
+       secondaryDiagonal(data);
     }
     
 }

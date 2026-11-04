@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringDSA",
+            "request": "launch",
+            "mainClass": "StringQUST.StringDSA",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "TwoDArrayLevelProb",
             "request": "launch",
             "mainClass": "TwoDArray.TwoDArrayLevelProb",

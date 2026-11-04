@@ -32,6 +32,8 @@ public class StringDSA
        String replace = name.replace('a', '*');
        System.out.println(replace);
 
+       int compare = name.compareToIgnoreCase("ALGORITHMS 365 technologies HSR layout");
+       System.out.println("Difference is "+compare);
         
     }
     

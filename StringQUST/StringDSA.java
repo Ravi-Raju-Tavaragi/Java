@@ -31,6 +31,8 @@ public class StringDSA
 
        int compare = name.compareToIgnoreCase("ALGORITHMS 365 technologies HSR layout");
        System.out.println("Difference is "+compare);
+
+       
         
     }
     

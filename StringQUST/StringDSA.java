@@ -1,5 +1,7 @@
 package StringQUST;
 
+import java.util.Arrays;
+
 public class StringDSA
 {
 
@@ -17,9 +19,18 @@ public class StringDSA
 
        char[] namearr = name.toCharArray();
        System.out.println(namearr);
+       String backtostring = Arrays.toString(namearr);
+       System.out.println(backtostring+"after"); 
 
-       String subname = name.substring(0, 10);
-       System.out.println(subname);
+       int subPosition = 100;
+       if(subPosition < name.length() && subPosition >= 0)
+       {
+            String subname = name.substring(0, 10);
+            System.out.println(subname);
+       }
+
+       String replace = name.replace('a', '*');
+       System.out.println(replace);
 
         
     }

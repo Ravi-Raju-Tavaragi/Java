@@ -48,4 +48,18 @@ public class MyStack
         return this.values[index];
     }
 
+    public void print()
+    {
+        if (this.top == -1)
+        {
+            System.out.println("Stack is empty");
+            return;
+        }
+
+        for (int i = this.top; i >=0; i--)
+        {
+            System.out.println(" [ " + i + " ]  --> " + this.values[i]);
+        }
+    }
+
 }

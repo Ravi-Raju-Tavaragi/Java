@@ -24,11 +24,6 @@ public class TestStack
             array[i] = myStack.pop();
             System.out.print(array[i] +" ");
         }
-
-
-
-
-
         
     }
     

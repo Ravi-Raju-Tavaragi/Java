@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidTWO",
+            "request": "launch",
+            "mainClass": "Stack.ValidTWO",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ValidExpresition",
             "request": "launch",
             "mainClass": "Stack.ValidExpresition",

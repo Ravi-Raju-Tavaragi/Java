@@ -30,10 +30,8 @@ public class ValidExpresition
             }
         }
 
-        if(mystack.peek() != -1 )
-        {
+        if(mystack.peek() != -1)
             isValidEXP = false;
-        }
 
         return isValidEXP;
     }

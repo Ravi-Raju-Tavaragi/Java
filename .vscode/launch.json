@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidExpresition",
+            "request": "launch",
+            "mainClass": "Stack.ValidExpresition",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "PalindromeStack",
             "request": "launch",
             "mainClass": "Stack.PalindromeStack",

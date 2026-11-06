@@ -156,6 +156,27 @@ public class TwoDArrayLevelProb
         return false;
     }
 
+    public static void swapTwoDArray(int matrix[][])
+    {
+        if(matrix == null)
+            System.out.println("Array null");
+
+        for(int row = 0; row < matrix.length; row++)
+        {
+            int left = 0;
+            int right = matrix[row].length - 1;
+
+            while(left < right)
+            {
+                int temp = matrix[row][row];
+                matrix[row][row] = matrix[row][matrix[row].length - 1];
+                matrix[row][matrix[row].length - 1] = temp;
+
+                left++;
+                right--;
+            }
+        }
+    }
 
 
 

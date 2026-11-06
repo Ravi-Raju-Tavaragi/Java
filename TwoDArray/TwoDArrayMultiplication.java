@@ -120,6 +120,9 @@ public class TwoDArrayMultiplication
         System.out.println();
         printCornerValues(matrixB);
 
+        System.out.println();
+        printCornerValues(matrixA);
+
         
     }
     

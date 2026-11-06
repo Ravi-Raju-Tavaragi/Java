@@ -43,6 +43,9 @@ public class MyQueue
     
     public int deQueue()
     {
+        if(this.count == 0)
+            return -1;
+        
         int index = this.first;
         this.first++;
         this.count--;

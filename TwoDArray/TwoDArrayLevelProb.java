@@ -168,13 +168,25 @@ public class TwoDArrayLevelProb
 
             while(left < right)
             {
-                int temp = matrix[row][row];
-                matrix[row][row] = matrix[row][matrix[row].length - 1];
-                matrix[row][matrix[row].length - 1] = temp;
+                int temp = matrix[row][left];
+                matrix[row][left] = matrix[row][right];
+                matrix[row][right] = temp;
 
                 left++;
                 right--;
             }
+        }
+    }
+
+    public static void printTwoDArray(int data[][])
+    {
+        for(int row = 0; row < data.length; row++)
+        {
+            for(int col = 0; col < data[row].length; col++)
+            {
+                System.out.print(data[row][col]+" ");
+            }
+            System.out.println();
         }
     }
 
@@ -208,6 +220,13 @@ public class TwoDArrayLevelProb
         int search1 = 8;
         boolean result1 = searchDioganalElement(array, search1);
         System.out.println(result1);
+
+        System.out.println();
+        printTwoDArray(array);
+        swapTwoDArray(array);
+        System.out.println("after swap");
+        printTwoDArray(array);
+
 
     }
     

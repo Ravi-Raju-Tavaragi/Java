@@ -46,6 +46,30 @@ public class StringQST
         return true;
     }
 
+    // 4. Count vowels and consonants
+    static void countVowelsConsonants(String str)
+    {
+        int vowels = 0;
+        int consonants = 0;
+
+        for(int i = 0; i < str.length(); i++)
+        {
+            char ch = Character.toLowerCase(str.charAt(i));
+
+            if(ch >= 'a' && ch <= 'z')
+            {
+                if(ch == 'a' || ch == 'e' || ch == 'i' ||
+                   ch == 'o' || ch == 'u')
+                    vowels++;
+                else
+                    consonants++;
+            }
+        }
+
+        System.out.println("Vowels: " + vowels);
+        System.out.println("Consonants: " + consonants);
+    }
+
 
 
     public static void main(String[] args) 
@@ -58,6 +82,9 @@ public class StringQST
         System.out.println("2. Reverse: " + reverseString(str));
 
         System.out.println("3. Palindrome: " + isPalindrome(str));
+
+        System.out.println("4. Vowels and Consonants:");
+        countVowelsConsonants(text);
 
     }
     

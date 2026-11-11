@@ -70,7 +70,22 @@ public class StringQST
         System.out.println("Consonants: " + consonants);
     }
 
+    // 5. Count words
+    static int countWords(String str)
+    {
+        int count = 0;
 
+        for(int i = 0; i < str.length(); i++)
+        {
+            if(str.charAt(i) != ' ' &&
+               (i == 0 || str.charAt(i - 1) == ' '))
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
 
     public static void main(String[] args) 
     {
@@ -86,6 +101,7 @@ public class StringQST
         System.out.println("4. Vowels and Consonants:");
         countVowelsConsonants(text);
 
+        System.out.println("5. Word Count: " + countWords(text));
     }
     
 }

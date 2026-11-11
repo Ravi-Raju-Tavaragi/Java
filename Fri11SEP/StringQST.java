@@ -87,6 +87,24 @@ public class StringQST
         return count;
     }
 
+    // 6. Convert lowercase to uppercase
+    static String convertToUppercase(String str)
+    {
+        String result = "";
+
+        for(int i = 0; i < str.length(); i++)
+        {
+            char ch = str.charAt(i);
+
+            if(ch >= 'a' && ch <= 'z')
+                ch = (char)(ch - 32);
+
+            result = result + ch;
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) 
     {
         String str = "madam";
@@ -102,6 +120,8 @@ public class StringQST
         countVowelsConsonants(text);
 
         System.out.println("5. Word Count: " + countWords(text));
+
+        System.out.println("6. Uppercase: " + convertToUppercase(text));
     }
     
 }

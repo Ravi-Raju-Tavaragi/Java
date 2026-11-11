@@ -28,6 +28,24 @@ public class StringQST
         return reverse;
     }
 
+    // 3. Check palindrome
+    static boolean isPalindrome(String str)
+    {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while(left < right)
+        {
+            if(str.charAt(left) != str.charAt(right))
+                return false;
+
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
 
 
     public static void main(String[] args) 
@@ -38,6 +56,9 @@ public class StringQST
         System.out.println("1. Length: " + findLength(str));
         
         System.out.println("2. Reverse: " + reverseString(str));
+
+        System.out.println("3. Palindrome: " + isPalindrome(str));
+
     }
     
 }

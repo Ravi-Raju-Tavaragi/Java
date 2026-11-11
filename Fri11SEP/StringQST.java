@@ -15,6 +15,18 @@ public class StringQST
         return count;
     }
 
+    // 2. Reverse a string
+    static String reverseString(String str)
+    {
+        String reverse = "";
+
+        for(int i = str.length() - 1; i >= 0; i--)
+        {
+            reverse = reverse + str.charAt(i);
+        }
+
+        return reverse;
+    }
 
 
 
@@ -25,6 +37,7 @@ public class StringQST
 
         System.out.println("1. Length: " + findLength(str));
         
+        System.out.println("2. Reverse: " + reverseString(str));
     }
     
 }

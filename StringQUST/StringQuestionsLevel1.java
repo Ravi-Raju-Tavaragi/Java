@@ -15,17 +15,23 @@ public class StringQuestionsLevel1
 
     public static void printValues()
     {
-        System.out.println("Default Values");
+        System.out.println();
+        System.out.println(" Values");
         char name[] = {'R', 'A', 'V', 'I'};
 
         for(int i = 0; i < name.length; i++)
         {
             System.out.print(name[i] + " ");
         }
+
+        System.out.println("\n length " + name.length);
     }
 
-    public static void printElements(char[] name)
+    public static void asciiValuedemo()
     {
+        System.out.println("Ascii Values");
+        char name[] = {65, 66, 67, 68, 69, 70};
+
         for(int i = 0; i < name.length; i++)
         {
             System.out.print(name[i] + " ");
@@ -36,6 +42,7 @@ public class StringQuestionsLevel1
     {
         demoDefaultValues();
         printValues();
+        asciiValuedemo();
     }
     
 }

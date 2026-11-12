@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayQt",
+            "request": "launch",
+            "mainClass": "StringQUST.ArrayQt",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "StringQST",
             "request": "launch",
             "mainClass": "Fri11SEP.StringQST",

@@ -60,12 +60,21 @@ public class StringQuestionsLevel1
         }
     }
 
+    public static void stringDemo()
+    {
+        System.out.println();
+        String name = "Ravi";
+
+        System.out.println(name.length());
+    }
+
     public static void main(String[] args) 
     {
         demoDefaultValues();
         printValues();
         asciiValuedemo();
         partialInitialization();
+        stringDemo();
     }
     
 }

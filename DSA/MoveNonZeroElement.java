@@ -44,7 +44,8 @@ public class MoveNonZeroElement
         printArray(array);
         System.out.println();
 
-
+        removeZeroatEnd(array);
+        printArray(array);
         
     }
     

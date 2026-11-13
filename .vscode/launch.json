@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MoveNonZeroElement",
+            "request": "launch",
+            "mainClass": "DSA.MoveNonZeroElement",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "StringQuestionsLevel1",
             "request": "launch",
             "mainClass": "StringQUST.StringQuestionsLevel1",

@@ -68,6 +68,17 @@ public class StringQuestionsLevel1
         System.out.println(name.length());
     }
 
+    public static void singleChar()
+    {
+        char ch = 'A';
+        System.out.println(ch + " --> " + (char)(ch+1));
+    }
+
+
+
+
+
+    
     public static void main(String[] args) 
     {
         demoDefaultValues();
@@ -76,8 +87,20 @@ public class StringQuestionsLevel1
         partialInitialization();
         stringDemo();
 
-         char name[] = {'R', 'A', 'V', 'I', ' ', 'H', 'I'};
-         System.out.println(name);
+        //prints text as it is
+        char name[] = {'R', 'A', 'V', 'I', ' ', 'H', 'I'};
+        System.out.println(name);
+        //prints address
+        int array[] = {10, 20, 30, 40};
+        System.out.println(array);
+        //prints text as it is
+        String sub = "java";
+        System.out.println(sub);
+
+        String emoji = "😊";
+        System.out.println(emoji.length());
+
+        singleChar();
     }
     
 }

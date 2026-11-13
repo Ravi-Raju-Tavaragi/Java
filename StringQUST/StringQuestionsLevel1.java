@@ -86,6 +86,17 @@ public class StringQuestionsLevel1
         System.out.println("small to caps characte");
         char ch4 = 'a';
         System.out.println(ch4 + " --> " + (char)(ch4 - 32));
+
+        System.out.println("given letter caps or small");
+        char ch5 = 'M';
+        if(ch5 >= 'A' && ch5 <= 'Z')
+        {
+            System.out.println(ch5 + " is Uppercase Letter");
+        }
+        else
+        {
+            System.out.println(ch5 + " is Lowercase Letter");
+        }
     }
 
 

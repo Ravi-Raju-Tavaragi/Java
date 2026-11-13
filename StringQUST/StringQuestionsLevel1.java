@@ -103,15 +103,40 @@ public class StringQuestionsLevel1
     {
         for(int i = 0; i < name.length; i+=2)
         {
-            System.out.print(name[i] + " ");
+            System.out.print(name[i] + " " + i + ", ");
         }
 
         System.out.println();
         //for string
         for(int i = 0; i < str.length(); i+=2)
         {
-            System.out.print(str.charAt(i) + " ");
+            System.out.print(str.charAt(i) + " " + i + ", ");
         }
+
+        System.out.println();
+        System.out.println("printing middle element");
+    
+        if(name.length % 2 == 1)
+        {
+            System.out.println(name[name.length / 2]);
+        }
+        else
+        {
+            System.out.println("Two Midle First "+name[name.length / 2 - 1] +" Second "+ name[(name.length / 2)]);
+        }
+
+        System.out.println();
+        System.out.println("For string print middle");
+
+        if(str.length() % 2 == 1)
+        {
+            System.out.println(str.charAt((str.length() / 2)));
+        }
+        else
+        {
+            System.out.println(str.charAt((str.length() / 2 - 1)) + str.charAt(str.length() / 2));
+        }
+
     }
 
 

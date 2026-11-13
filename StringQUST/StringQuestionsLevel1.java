@@ -70,15 +70,29 @@ public class StringQuestionsLevel1
 
     public static void singleChar()
     {
+        System.out.println("--------------------------");
+        System.out.println("next character");
         char ch = 'A';
-        System.out.println(ch + " --> " + (char)(ch+1));
+        System.out.println(ch + " --> " + (char)(ch + 1));
+
+        System.out.println("previous characte");
+        char ch2 = 'B';
+        System.out.println(ch2 + " --> " + (char)(ch2 - 1));
+
+        System.out.println("caps to small characte");
+        char ch3 = 'A';
+        System.out.println(ch3 + " --> " + (char)(ch3 + 32));
+
+        System.out.println("small to caps characte");
+        char ch4 = 'a';
+        System.out.println(ch4 + " --> " + (char)(ch4 - 32));
     }
 
 
 
 
 
-    
+
     public static void main(String[] args) 
     {
         demoDefaultValues();

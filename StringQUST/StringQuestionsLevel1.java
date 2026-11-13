@@ -75,6 +75,9 @@ public class StringQuestionsLevel1
         asciiValuedemo();
         partialInitialization();
         stringDemo();
+
+         char name[] = {'R', 'A', 'V', 'I', ' ', 'H', 'I'};
+         System.out.println(name);
     }
     
 }

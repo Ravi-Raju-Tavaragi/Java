@@ -99,6 +99,21 @@ public class StringQuestionsLevel1
         }
     }
 
+    public static void evenIndices(char[] name, String str)
+    {
+        for(int i = 0; i < name.length; i+=2)
+        {
+            System.out.print(name[i] + " ");
+        }
+
+        System.out.println();
+        //for string
+        for(int i = 0; i < str.length(); i+=2)
+        {
+            System.out.print(str.charAt(i) + " ");
+        }
+    }
+
 
 
 
@@ -113,7 +128,7 @@ public class StringQuestionsLevel1
         stringDemo();
 
         //prints text as it is
-        char name[] = {'R', 'A', 'V', 'I', ' ', 'H', 'I'};
+        char name[] = {'R', 'A', 'V', 'I', 'H', 'I'};
         System.out.println(name);
         //prints address
         int array[] = {10, 20, 30, 40};
@@ -126,6 +141,8 @@ public class StringQuestionsLevel1
         System.out.println(emoji.length());
 
         singleChar();
+
+        evenIndices(name, sub);
     }
     
 }

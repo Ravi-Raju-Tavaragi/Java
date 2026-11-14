@@ -130,11 +130,11 @@ public class StringQuestionsLevel1
 
         if(str.length() % 2 == 1)
         {
-            System.out.println(str.charAt((str.length() / 2)));
+            System.out.println(str.charAt(str.length() / 2));
         }
         else
         {
-            System.out.println(str.charAt((str.length() / 2 - 1)) + str.charAt(str.length() / 2));
+            System.out.println(str.charAt(str.length() / 2 - 1) + " " + str.charAt(str.length() / 2));
         }
 
     }
@@ -159,7 +159,7 @@ public class StringQuestionsLevel1
         int array[] = {10, 20, 30, 40};
         System.out.println(array);
         //prints text as it is
-        String sub = "java";
+        String sub = "javaa";
         System.out.println(sub);
 
         String emoji = "😊";

@@ -35,6 +35,35 @@ public class StringHW
         }
     }
 
+    public static void count()
+    {
+        char name[] = {'R', 'A', 'V', 'I', 'H', 'I', '1', '2'};
+        String str = "HELLORAVI12";
+
+        int charUpperCasecount = 0;
+        int charLowerCasecount = 0;
+        int charDigitCount = 0;
+
+        for(int i = 0; i < name.length; i++)
+        {
+           if(name[i] >= 'A' && name[i] <= 'Z')
+           {
+                charUpperCasecount++;
+           }
+           else if(name[i] >= 'a' && name[i] <= 'z')
+           {
+                charLowerCasecount++;
+           }
+
+           if(name[i] >= '0' && name[i] <= '9')
+           {
+                charDigitCount++;
+           }
+        }
+        System.out.println(charUpperCasecount +" " + charLowerCasecount +" " + charDigitCount);
+
+    }
+
 
 
     public static void main(String[] args) 
@@ -44,6 +73,7 @@ public class StringHW
         
         oddCharStr(name, str);
         asciiValue();
+        count();
     }
     
 }

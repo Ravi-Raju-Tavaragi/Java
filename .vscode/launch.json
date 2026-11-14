@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringHW",
+            "request": "launch",
+            "mainClass": "StringQUST.StringHW",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "MoveNonZeroElement",
             "request": "launch",
             "mainClass": "DSA.MoveNonZeroElement",

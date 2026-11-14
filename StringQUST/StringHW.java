@@ -19,19 +19,19 @@ public class StringHW
 
     public static void asciiValue()
     {
-        char[] digits = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println();
         String str = "0123456789";
 
-        for(int i = 0; i < digits.length; i++)
+        for(char digit = '0'; digit <= '9'; digit++)
         {
-            System.out.print(digits[i]);
+            System.out.println(digit + " = " + (int) digit);
         }
 
         System.out.println();
         //for string
-        for(int i = 0; i < str.length(); i++)
+        for(char i = 0; i < str.length(); i++)
         {
-            System.out.print(str.charAt(i));
+            System.out.println((int)str.charAt(i) + " " + str.charAt(i));
         }
     }
 

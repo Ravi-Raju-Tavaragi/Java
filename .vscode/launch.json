@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountOccurances",
+            "request": "launch",
+            "mainClass": "StringQUST.CountOccurances",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "SpecialCharCount",
             "request": "launch",
             "mainClass": "StringQUST.SpecialCharCount",

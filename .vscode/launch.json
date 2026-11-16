@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SpecialCharCount",
+            "request": "launch",
+            "mainClass": "StringQUST.SpecialCharCount",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "StringHW",
             "request": "launch",
             "mainClass": "StringQUST.StringHW",

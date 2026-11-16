@@ -1,7 +1,7 @@
 package StringQUST;
 
 public class StringHW
-{
+{ 
     public static void oddCharStr(char name[], String str)
     {
         for(int i = 1; i < name.length; i+=2)

@@ -15,12 +15,31 @@ public class CountOccurances
 
         System.out.println(count);
     } 
+
+    public static void largestChar(char[] name)
+    {
+        char largest = name[0];
+
+        for(int i = 1; i < name.length; i++)
+        {
+            if(largest < name[i])
+            {
+                largest = name[i];
+            }
+        }
+
+        System.out.println("Largest char in array is : "+largest);
+    }
+
+
+
     public static void main(String[] args) 
     {
         char name[] = {'R', 'A', 'V', 'I', 'H', 'I', '1', '2'};
         char target = 'I';
 
         countOccurance(name, target);
+        largestChar(name);
         
     }
     

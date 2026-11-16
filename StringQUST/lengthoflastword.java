@@ -22,10 +22,41 @@ public class lengthoflastword
         return count;
     }
 
+    // leetcode 557
+    public static void reverseWords()
+    {
+        char[] temp = {'R', 'A', 'V', 'I', ' ', 'H', 'I', ' ', '1', '2'};
+
+        int start = 0;
+
+        for(int end = 0; end < temp.length; end++)
+        {
+            if(end == temp.length || temp[end] == ' ')
+            {
+                int left = start;
+                int right = end - 1;
+
+                while(left < right)
+                {
+                    char temp1 = temp[left];
+                    temp[left] = temp[right];
+                    temp[right] = temp1;
+
+                    left++;
+                    right--;
+                }
+                start = end + 1;
+            }
+        }
+
+        System.out.println(temp);
+    }
+
 
     public static void main(String[] args) 
     {
 
+        reverseWords();
         
     }
     

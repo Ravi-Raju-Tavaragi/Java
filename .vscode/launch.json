@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lengthoflastword",
+            "request": "launch",
+            "mainClass": "StringQUST.lengthoflastword",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ReplaceVowel",
             "request": "launch",
             "mainClass": "StringQUST.ReplaceVowel",

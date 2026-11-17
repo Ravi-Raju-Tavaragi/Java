@@ -119,10 +119,11 @@ public class StringInbuiltMethods
     public static void demoCleaning()
     {
         String str1 = "Hi, Ravi How are You";
-        String str2 = "";
+        String str2 = "Ravi, are you ok";
 
         System.out.println();
-        System.out.println(str1.trim());
+        str1.trim();
+        System.out.println(str1);
         System.out.println(str2.isEmpty());
     }
 

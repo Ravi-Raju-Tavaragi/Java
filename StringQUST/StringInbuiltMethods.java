@@ -103,7 +103,27 @@ public class StringInbuiltMethods
         System.out.println();
         System.out.println(str2.replace('a', '*'));
         System.out.println(str1.replaceAll(str1, str2));
-        
+    }
+    
+    //split()
+    public static void demoSplit()
+    {
+        //String str1 = "Hi, Ravi How are You";
+        String str2 = "Ravi, are you ok";
+
+        System.out.println();
+        System.out.println(str2.split("ou"));
+    }
+
+    //cleaning
+    public static void demoCleaning()
+    {
+        String str1 = "Hi, Ravi How are You";
+        String str2 = "";
+
+        System.out.println();
+        System.out.println(str1.trim());
+        System.out.println(str2.isEmpty());
     }
 
 
@@ -118,6 +138,8 @@ public class StringInbuiltMethods
         demoCheckingStartwith();
         demoExtraction();
         demoReplace();
+        demoSplit();
+        demoCleaning();
     }
     
 }

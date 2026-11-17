@@ -83,6 +83,17 @@ public class StringInbuiltMethods
         System.out.println(str1.endsWith(str2));
     }
 
+    //Extraction substring begain end
+    public static void demoExtraction()
+    {
+        String str1 = "java";
+        String str2 = "Ravi";
+
+        System.out.println();
+        System.out.println(str1.substring(2));
+        System.out.println(str2.substring(1, 4));
+    }
+
 
 
 
@@ -93,6 +104,7 @@ public class StringInbuiltMethods
         demoEqualsIgnorecase();
         democompareTo();
         demoCheckingStartwith();
+        demoExtraction();
     }
     
 }

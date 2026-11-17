@@ -94,6 +94,18 @@ public class StringInbuiltMethods
         System.out.println(str2.substring(1, 4));
     }
 
+    //Replacements replaceall and replace
+    public static void demoReplace()
+    {
+        String str1 = "Hi, Ravi How are You";
+        String str2 = "Ravi, are you ok";
+
+        System.out.println();
+        System.out.println(str2.replace('a', '*'));
+        System.out.println(str1.replaceAll(str1, str2));
+        
+    }
+
 
 
 
@@ -105,6 +117,7 @@ public class StringInbuiltMethods
         democompareTo();
         demoCheckingStartwith();
         demoExtraction();
+        demoReplace();
     }
     
 }

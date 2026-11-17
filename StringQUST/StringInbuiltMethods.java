@@ -70,6 +70,8 @@ public class StringInbuiltMethods
     }
 
     //compare toIgnoreCase() -- explore write code
+    //searching methods
+    
 
 
 

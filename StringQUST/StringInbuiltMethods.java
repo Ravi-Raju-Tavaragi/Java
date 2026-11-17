@@ -71,7 +71,18 @@ public class StringInbuiltMethods
 
     //compare toIgnoreCase() -- explore write code
     //searching methods
-    
+    public static void demoCheckingStartwith()
+    {
+        String str1 = "java";
+        String str2 = "Ravi";
+        String str3 = "va";
+
+
+        System.out.println();
+        System.out.println(str1.startsWith(str3));
+        System.out.println(str1.endsWith(str2));
+    }
+
 
 
 
@@ -81,6 +92,7 @@ public class StringInbuiltMethods
         demoEquals();
         demoEqualsIgnorecase();
         democompareTo();
+        demoCheckingStartwith();
     }
     
 }

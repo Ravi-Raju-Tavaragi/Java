@@ -111,21 +111,51 @@ public class StringInbuiltMethods
         //String str1 = "Hi, Ravi How are You";
         String str2 = "Ravi, are you ok";
 
+        String[] words = str2.split(" ");
+
         System.out.println();
-        System.out.println(str2.split("ou"));
+        for(String word : words)
+        {
+            System.out.print(word);
+        }
     }
 
     //cleaning
     public static void demoCleaning()
     {
-        String str1 = "Hi, Ravi How are You";
+        String str1 = "   Hi, Ravi How are You    ";
         String str2 = "Ravi, are you ok";
 
         System.out.println();
-        str1.trim();
+        System.out.println(str1.trim());
         System.out.println(str1);
         System.out.println(str2.isEmpty());
     }
+
+    //isempty
+    public static void demoIsEmpty()
+    {
+        String str1 = "   ";
+        String str2 = "";
+        String str3 = "va";
+
+
+        System.out.println();
+        System.out.println(str1.isEmpty());
+        System.out.println(str2.isEmpty());
+        System.out.println(str3.isEmpty());
+    }
+
+    //substring begain and end
+     public static void demoSubString()
+    {
+        String str1 = "java is programming language";
+
+        System.out.println();
+        System.out.println(str1.substring(3));
+    }
+
+
 
 
 
@@ -141,6 +171,8 @@ public class StringInbuiltMethods
         demoReplace();
         demoSplit();
         demoCleaning();
+        demoIsEmpty();
+        demoSubString();
     }
     
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Regex",
+            "request": "launch",
+            "mainClass": "StringQUST.Regex",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "ReverseStringWord",
             "request": "launch",
             "mainClass": "StringQUST.ReverseStringWord",

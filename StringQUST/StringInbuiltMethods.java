@@ -147,16 +147,31 @@ public class StringInbuiltMethods
     }
 
     //substring begain and end
-     public static void demoSubString()
+    public static void demoSubString()
     {
         String str1 = "java is programming language";
 
         System.out.println();
-        System.out.println(str1.substring(3));
+        System.out.println(str1.substring(8));
+        System.out.println(str1.substring(5, 7));
     }
 
+    //index of last index
+    public static void demoIndexof()
+    {
+        String str1 = "www.google.com";
 
+        System.out.println();
+        System.out.println(str1.indexOf("."));
+        System.out.println(str1.indexOf(".", 4));
+        System.out.println(str1.lastIndexOf(".", 4));
+    }
 
+    //value of
+    public static void demoValueof()
+    {
+    
+    }
 
 
 
@@ -173,6 +188,7 @@ public class StringInbuiltMethods
         demoCleaning();
         demoIsEmpty();
         demoSubString();
+        demoIndexof();
     }
     
 }

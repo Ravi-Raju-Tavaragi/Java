@@ -29,7 +29,7 @@ public class lengthoflastword
 
         int start = 0;
 
-        for(int end = 0; end < temp.length; end++)
+        for(int end = 0; end <= temp.length; end++)
         {
             if(end == temp.length || temp[end] == ' ')
             {

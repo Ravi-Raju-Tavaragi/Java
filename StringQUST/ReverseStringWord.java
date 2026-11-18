@@ -2,7 +2,7 @@ package StringQUST;
 
 public class ReverseStringWord
 {
-    public String reverseWords(String s) 
+    public static String reverseWords(String s) 
     {
         char[] charArray = s.toCharArray();
 
@@ -18,9 +18,7 @@ public class ReverseStringWord
                 while (left < right) {
 
                     char temp = charArray[left];
-
                     charArray[left] = charArray[right];
-
                     charArray[right] = temp;
 
                     left++;
@@ -37,8 +35,9 @@ public class ReverseStringWord
 
     public static void main(String[] args) 
     {
+        String temp = "RAVI HI 12";
 
-        
+        System.out.println(reverseWords(temp));
     }
     
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseStringWord",
+            "request": "launch",
+            "mainClass": "StringQUST.ReverseStringWord",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "StringInbuiltMethods",
             "request": "launch",
             "mainClass": "StringQUST.StringInbuiltMethods",

@@ -51,6 +51,31 @@ public class Regex
         System.out.println("A".matches("\\W"));
     }
 
+    //QUANTIFIERS
+
+    //1) star quantifier 0 or more
+    public static void demoQuantStar()
+    {
+        String s1 = "abscsccctrdsnan";
+        String s2 = "aaaabbbbccc";
+        String s3 = "a98";
+        System.out.println(s1.matches("[abc]*"));
+        System.out.println(s2.matches("[abc]*"));
+        System.out.println(s3.matches("[abc]*"));
+    }
+
+    //2) plus quantifier 0 or more
+    public static void demoQuantPlus()
+    {
+        String s1 = "abc";
+        String s2 = "";
+        String s3 = "aaabbb";
+        System.out.println(s1.matches("[abc]+"));
+        System.out.println(s2.matches("[abc]+"));
+        System.out.println(s3.matches("[abc]+"));
+    }
+
+
 
     public static void main(String[] args) 
     {
@@ -82,7 +107,7 @@ public class Regex
         // REGULAR META CHARACTERS  //
 
         //==============================================//
-        System.out.println("---------------------------------");
+        /*System.out.println("---------------------------------");
         demoMatchOneDigit();
         System.out.println();
         demoMatchOneWord();
@@ -93,7 +118,17 @@ public class Regex
         System.out.println();
         demoNonSpaceChar();
         System.out.println();
-        demoNonWord();
+        demoNonWord();*/
+        //==============================================//
+
+        // REGULAR QUANTIFIERS  //
+
+        //==============================================//
+        System.out.println("---------------------------------");
+        demoQuantStar();
+
+        System.out.println();
+        demoQuantPlus();
 
 
     }

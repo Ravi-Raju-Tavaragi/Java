@@ -17,6 +17,7 @@ public class StringHW19
 
         System.out.println(str3.replace("is", "*"));
         System.out.println(str3.replaceFirst("is", "**"));
+        System.out.println(str3.replaceAll("a", " "));
     }
     
 }

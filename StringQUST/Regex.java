@@ -2,6 +2,25 @@ package StringQUST;
 
 public class Regex
 {
+    //1) \d -- MATCHES ONE DIGIT
+    public static void demoMatchOneDigit()
+    {
+        String a = "8";
+        System.out.println(a.matches("\\d"));
+        System.out.println("A".matches("\\d"));
+    }
+
+    //1) \w -- MATCHES ONE word
+    public static void demoMatchOneWord()
+    {
+        String a = "8";
+        System.out.println(a.matches("\\w"));
+        System.out.println("A".matches("\\w"));
+        System.out.println("@".matches("\\w"));
+        System.out.println("_".matches("\\w"));
+    }
+
+
     public static void main(String[] args) 
     {
         //regex .(dot) dot matches any character expect new line
@@ -25,6 +44,17 @@ public class Regex
 
         //xz matches exact sequence
         System.out.println(text.matches("xz"));
+
+
+        //==============================================//
+
+        // REGULAR META CHARACTERS  //
+
+        //==============================================//
+        demoMatchOneDigit();
+        demoMatchOneWord();
+
+
     }
     
 }

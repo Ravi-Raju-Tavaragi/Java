@@ -10,7 +10,7 @@ public class Regex
         System.out.println("A".matches("\\d"));
     }
 
-    //1) \w -- MATCHES ONE word
+    //2) \w -- MATCHES ONE word
     public static void demoMatchOneWord()
     {
         String a = "8";
@@ -18,6 +18,37 @@ public class Regex
         System.out.println("A".matches("\\w"));
         System.out.println("@".matches("\\w"));
         System.out.println("_".matches("\\w"));
+    }
+
+    //3) \D -- MATCHES non digit
+    public static void demoMatchNONOneWord()
+    {
+        String a = "8";
+        System.out.println(a.matches("\\D"));
+        System.out.println("A".matches("\\D"));
+    }
+
+    //4) \s -- MATCHES one whitespace character
+    public static void demoMatchWhiteSpace()
+    {
+        System.out.println(" ".matches("\\s"));
+        System.out.println("A".matches("\\s"));
+    }
+
+    
+    //5) \s -- MATCHES any no space character
+    public static void demoNonSpaceChar()
+    {
+        System.out.println("A".matches("\\S"));
+        System.out.println(" ".matches("\\S"));
+    }
+
+    //6) \s -- MATCHES any non word character
+    public static void demoNonWord()
+    {
+        System.out.println("@".matches("\\W"));
+        System.out.println("#".matches("\\W"));
+        System.out.println("A".matches("\\W"));
     }
 
 
@@ -51,8 +82,18 @@ public class Regex
         // REGULAR META CHARACTERS  //
 
         //==============================================//
+        System.out.println("---------------------------------");
         demoMatchOneDigit();
+        System.out.println();
         demoMatchOneWord();
+        System.out.println();
+        demoMatchNONOneWord();
+        System.out.println();
+        demoMatchWhiteSpace();
+        System.out.println();
+        demoNonSpaceChar();
+        System.out.println();
+        demoNonWord();
 
 
     }

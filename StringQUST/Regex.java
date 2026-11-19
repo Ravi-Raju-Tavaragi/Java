@@ -74,8 +74,42 @@ public class Regex
         System.out.println(s2.matches("[abc]+"));
         System.out.println(s3.matches("[abc]+"));
     }
+    
+    //03) exact count ({n})
+    public static void demoQuantExactCount()
+    {
+        String s1 = "abc";
+        String s2 = "";
+        String s3 = "aaabbb";
+        System.out.println(s1.matches("[abc]{3}"));
+        System.out.println(s2.matches("[abc]{3}"));
+        System.out.println(s3.matches("[abc]{3}"));
+    }
 
+    //04) {min, max} -- check within range
+    public static void demoQuantMinMax()
+    {
+        String s1 = "abccba";
+        String s2 = "ab";
+        String s3 = "abccbaaa";
+        System.out.println(s1.matches("[abc]{3, 5}"));
+        System.out.println(s2.matches("[abc]{0, 3}"));
+        System.out.println(s3.matches("[abc]{3, 5}"));
+    }
 
+    //05) check for 0 or 1 ?
+    public static void demoQuantQuetionMArk()
+    {
+        String s1 = "ac";
+        String s2 = "abc";
+        String s3 = "abbc";
+        System.out.println(s1.matches("ab?c"));
+        System.out.println(s2.matches("ab?c"));
+        System.out.println(s3.matches("ab?c"));
+
+        System.out.println(s3.matches("abb?c"));
+        System.out.println(s3.matches("ab?b?c"));
+    }
 
     public static void main(String[] args) 
     {
@@ -129,6 +163,15 @@ public class Regex
 
         System.out.println();
         demoQuantPlus();
+
+        System.out.println();
+        demoQuantExactCount();
+
+        System.out.println();
+        demoQuantMinMax();
+
+        System.out.println();
+        demoQuantQuetionMArk();
 
 
     }

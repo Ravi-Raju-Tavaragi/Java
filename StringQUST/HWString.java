@@ -49,6 +49,16 @@ public class HWString
         return str.trim().replaceAll("\\s+", " ");
     }
 
+    // 7. Check valid date format
+    public static void isValidDate()
+    {
+        String date1 = "01*12*2000";
+        String date2 = "01/12/2000";
+
+        System.out.println("Is Valid Date : "+date1.matches("[0-3][0-9][^a-zA-Z0-9!-.:-@{-~}][0-1][0-9][^a-zA-Z0-9!-.:-@{-~}][1-2][0-9][0-9][0-9]"));
+        System.out.println("Is Valid Date : "+date2.matches("[0-3][0-9][^a-zA-Z0-9!-.:-@{-~}][0-1][0-9][^a-zA-Z0-9!-.:-@{-~}][1-2][0-9][0-9][0-9]"));
+    }
+
 
     public static void main(String[] args) 
     {
@@ -90,7 +100,10 @@ public class HWString
 
         System.out.println(removeExtraSpaces(str2));
 
+        System.out.println("------------------");
         
+        // 5. Remove special characters
+        isValidDate();
     }
     
 }

@@ -53,7 +53,43 @@ public class HWString
     public static void main(String[] args) 
     {
 
-        
+         // 1. Email
+        String email = "ravi123@gmail.com";
+
+        extractEmail(email);
+
+        System.out.println("------------------");
+
+
+        // 2. Binary
+        String binary = "101101";
+
+        System.out.println("Binary: " + isBinary(binary));
+
+        System.out.println("------------------");
+
+
+        // 3. Hexadecimal
+        String hex = "1A3F";
+
+        System.out.println("Hexadecimal: " + isHexadecimal(hex));
+
+        System.out.println("------------------");
+
+
+        // 5. Remove special characters
+        String str1 = "Hello@Java#123!";
+
+        System.out.println(removeSpecialCharacters(str1));
+
+        System.out.println("------------------");
+
+
+        // 6. Remove extra spaces
+        String str2 = "        Java   ";
+
+        System.out.println(removeExtraSpaces(str2));
+
         
     }
     

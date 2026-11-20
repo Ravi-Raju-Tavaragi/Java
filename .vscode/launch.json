@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HWString",
+            "request": "launch",
+            "mainClass": "StringQUST.HWString",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "StringHW19",
             "request": "launch",
             "mainClass": "StringQUST.StringHW19",

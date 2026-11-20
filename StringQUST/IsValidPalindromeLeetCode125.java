@@ -7,8 +7,8 @@ package StringQUST;
 //Reason : StringBuilder provides reverse method
 // Easy to understand logic
 // good starting approach for beginers
-//Time Complexity :
-//Space Complexity :
+//Time Complexity : O(n)
+//Space Complexity : O(n)
 public class IsValidPalindromeLeetCode125
 {
     public static void testPalindrome(String input)
@@ -59,7 +59,7 @@ public class IsValidPalindromeLeetCode125
         testPalindrome("race a car");
         testPalindrome("121");
         testPalindrome("A@#%fdd");
-         testPalindrome("");
+        testPalindrome("");
         
 
         

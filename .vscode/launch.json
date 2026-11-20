@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsPalindromeApproach2",
+            "request": "launch",
+            "mainClass": "StringQUST.IsPalindromeApproach2",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "IsValidPalindromeLeetCode125",
             "request": "launch",
             "mainClass": "StringQUST.IsValidPalindromeLeetCode125",

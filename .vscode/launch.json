@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DeeCodeCompressedString",
+            "request": "launch",
+            "mainClass": "StringQUST.DeeCodeCompressedString",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "IsPalindromeApproach3",
             "request": "launch",
             "mainClass": "StringQUST.IsPalindromeApproach3",

@@ -59,3 +59,19 @@ public class IsPalindromeApproach2
     }
     
 }
+
+
+/*
+char currentChar = input.charAt(left);
+            char currentChar1 = input.charAt(right);
+
+            if(Character.isLetterOrDigit(currentChar) && Character.isLetterOrDigit(currentChar1))
+            {
+                if(currentChar == currentChar1)
+                {
+                    return true;
+                }
+                left++;
+                right--;
+            }
+*/

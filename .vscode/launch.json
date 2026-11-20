@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsPalindromeApproach3",
+            "request": "launch",
+            "mainClass": "StringQUST.IsPalindromeApproach3",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "IsPalindromeApproach2",
             "request": "launch",
             "mainClass": "StringQUST.IsPalindromeApproach2",

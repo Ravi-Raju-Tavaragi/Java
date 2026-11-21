@@ -141,6 +141,33 @@ public class StringHW
         return result;
     }
 
+    
+// 2. Reverse Each Word
+    public static String reverseEachWord(String str)
+    {
+        String result = "";
+        int start = 0;
+
+        for(int end = 0; end <= str.length(); end++)
+        {
+            if(end == str.length() || str.charAt(end) == ' ')
+            {
+                for(int i = end - 1; i >= start; i--)
+                {
+                    result = result + str.charAt(i);
+                }
+
+                if(end < str.length())
+                {
+                    result = result + " ";
+                }
+
+                start = end + 1;
+            }
+        }
+
+        return result;
+    }
 
 
     public static void main(String[] args) 

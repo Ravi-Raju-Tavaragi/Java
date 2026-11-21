@@ -114,6 +114,34 @@ public class StringHW
         return result;
     }
 
+     // 1. Remove Duplicate Characters
+    public static String removeDuplicates(String str)
+    {
+        String result = "";
+
+        for(int i = 0; i < str.length(); i++)
+        {
+            boolean duplicate = false;
+
+            for(int j = 0; j < i; j++)
+            {
+                if(str.charAt(i) == str.charAt(j))
+                {
+                    duplicate = true;
+                    break;
+                }
+            }
+
+            if(!duplicate)
+            {
+                result = result + str.charAt(i);
+            }
+        }
+
+        return result;
+    }
+
+
 
     public static void main(String[] args) 
     {

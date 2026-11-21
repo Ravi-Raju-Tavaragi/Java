@@ -44,16 +44,12 @@ public class DeeCodeCompressedString
     }
 
 
-
-
-
-
     public static void main(String[] args) 
     {
         testCode("a3b4c2");    
         testCode("x1y5");
         testCode("m2n3"); 
-         testCode("a1");
+        testCode("a1");
     }
     
 }

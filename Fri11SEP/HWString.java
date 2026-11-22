@@ -80,9 +80,44 @@ public static String replaceSpaces(String str)
 }
 
 
+public static String longestWord(String str)
+{
+    String longest = "";
+    String currentWord = "";
+
+    for(int i = 0; i <= str.length(); i++)
+    {
+        if(i == str.length() || str.charAt(i) == ' ')
+        {
+            if(currentWord.length() > longest.length())
+            {
+                longest = currentWord;
+            }
+
+            currentWord = "";
+        }
+        else
+        {
+            currentWord = currentWord + str.charAt(i);
+        }
+    }
+
+    return longest;
+}
+
     public static void main(String[] args) 
     {
-        
+        System.out.println("\n1. Character Frequency");
+        countCharacterFrequency("programming");
+
+        System.out.println("\n2. First Non-Repeating Character");
+        System.out.println(firstNonRepeatingCharacter("swiss"));
+
+        System.out.println("\n3. Replace Spaces");
+        System.out.println(replaceSpaces("I love Java"));
+
+        System.out.println("\n4. Longest Word");
+        System.out.println(longestWord("Java is a programming language"));
     }
     
 }

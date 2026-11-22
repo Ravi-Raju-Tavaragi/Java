@@ -60,6 +60,25 @@ public static char firstNonRepeatingCharacter(String str)
 }
 
 
+public static String replaceSpaces(String str)
+{
+    String result = "";
+
+    for(int i = 0; i < str.length(); i++)
+    {
+        if(str.charAt(i) == ' ')
+        {
+            result = result + "%20";
+        }
+        else
+        {
+            result = result + str.charAt(i);
+        }
+    }
+
+    return result;
+}
+
 
     public static void main(String[] args) 
     {

@@ -1,5 +1,6 @@
 package Fri11SEP;
 
+
 public class HWString
 {
     public static void countCharacterFrequency(String str)

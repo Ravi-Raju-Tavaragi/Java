@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IntegerToRoman",
+            "request": "launch",
+            "mainClass": "StringQUST.IntegerToRoman",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "HWString",
             "request": "launch",
             "mainClass": "Fri11SEP.HWString",

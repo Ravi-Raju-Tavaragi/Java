@@ -69,7 +69,7 @@ public class IntegerToRoman
 
     public static void main(String[] args) 
     {
-        int num = 3000;
+        int num = 3499;
         System.out.println("Integer number - "+num+" Roman Number - "+intToRoman(num));
         
     }
